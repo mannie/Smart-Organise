@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDA093CE1B28F51E001AF7CE /* TAGOrganiseByDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA093CD1B28F51E001AF7CE /* TAGOrganiseByDate.swift */; };
 		CDBF2A2D1B28D84C00C3B954 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDBF2A2B1B28D84C00C3B954 /* InfoPlist.strings */; };
-		CDBF2A301B28D84C00C3B954 /* TAGOrganiseByDate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF2A2F1B28D84C00C3B954 /* TAGOrganiseByDate.m */; };
 		CDBF2A331B28D84C00C3B954 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBF2A311B28D84C00C3B954 /* main.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDA093CC1B28F51E001AF7CE /* TAGOrganiseByDate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAGOrganiseByDate-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDA093CD1B28F51E001AF7CE /* TAGOrganiseByDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGOrganiseByDate.swift; sourceTree = "<group>"; };
 		CDBF2A261B28D84C00C3B954 /* TAGOrganiseByDate.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGOrganiseByDate.action; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBF2A2A1B28D84C00C3B954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDBF2A2C1B28D84C00C3B954 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CDBF2A2E1B28D84C00C3B954 /* TAGOrganiseByDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGOrganiseByDate.h; sourceTree = "<group>"; };
-		CDBF2A2F1B28D84C00C3B954 /* TAGOrganiseByDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAGOrganiseByDate.m; sourceTree = "<group>"; };
 		CDBF2A321B28D84C00C3B954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,8 +51,8 @@
 		CDBF2A281B28D84C00C3B954 /* TAGOrganiseByDate */ = {
 			isa = PBXGroup;
 			children = (
-				CDBF2A2E1B28D84C00C3B954 /* TAGOrganiseByDate.h */,
-				CDBF2A2F1B28D84C00C3B954 /* TAGOrganiseByDate.m */,
+				CDA093CD1B28F51E001AF7CE /* TAGOrganiseByDate.swift */,
+				CDA093CC1B28F51E001AF7CE /* TAGOrganiseByDate-Bridging-Header.h */,
 				CDBF2A311B28D84C00C3B954 /* main.xib */,
 				CDBF2A291B28D84C00C3B954 /* Supporting Files */,
 			);
@@ -153,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBF2A301B28D84C00C3B954 /* TAGOrganiseByDate.m in Sources */,
+				CDA093CE1B28F51E001AF7CE /* TAGOrganiseByDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +259,15 @@
 		CDBF2A371B28D84C00C3B954 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TAGOrganiseByDate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAGOrganiseByDate/TAGOrganiseByDate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -271,11 +275,14 @@
 		CDBF2A381B28D84C00C3B954 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TAGOrganiseByDate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAGOrganiseByDate/TAGOrganiseByDate-Bridging-Header.h";
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
@@ -299,6 +306,7 @@
 				CDBF2A381B28D84C00C3B954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
