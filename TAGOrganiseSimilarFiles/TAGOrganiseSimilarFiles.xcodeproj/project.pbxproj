@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDA093D11B28F56B001AF7CE /* TAGOrganiseSimilarFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA093D01B28F56B001AF7CE /* TAGOrganiseSimilarFiles.swift */; };
 		CDBF29ED1B28D78B00C3B954 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDBF29EB1B28D78B00C3B954 /* InfoPlist.strings */; };
-		CDBF29F01B28D78B00C3B954 /* TAGOrganiseSimilarFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF29EF1B28D78B00C3B954 /* TAGOrganiseSimilarFiles.m */; };
 		CDBF29F31B28D78B00C3B954 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBF29F11B28D78B00C3B954 /* main.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDA093CF1B28F56B001AF7CE /* TAGOrganiseSimilarFiles-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAGOrganiseSimilarFiles-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDA093D01B28F56B001AF7CE /* TAGOrganiseSimilarFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGOrganiseSimilarFiles.swift; sourceTree = "<group>"; };
 		CDBF29E61B28D78B00C3B954 /* TAGOrganiseSimilarFiles.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGOrganiseSimilarFiles.action; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBF29EA1B28D78B00C3B954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDBF29EC1B28D78B00C3B954 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CDBF29EE1B28D78B00C3B954 /* TAGOrganiseSimilarFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGOrganiseSimilarFiles.h; sourceTree = "<group>"; };
-		CDBF29EF1B28D78B00C3B954 /* TAGOrganiseSimilarFiles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAGOrganiseSimilarFiles.m; sourceTree = "<group>"; };
 		CDBF29F21B28D78B00C3B954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,8 +51,8 @@
 		CDBF29E81B28D78B00C3B954 /* TAGOrganiseSimilarFiles */ = {
 			isa = PBXGroup;
 			children = (
-				CDBF29EE1B28D78B00C3B954 /* TAGOrganiseSimilarFiles.h */,
-				CDBF29EF1B28D78B00C3B954 /* TAGOrganiseSimilarFiles.m */,
+				CDA093D01B28F56B001AF7CE /* TAGOrganiseSimilarFiles.swift */,
+				CDA093CF1B28F56B001AF7CE /* TAGOrganiseSimilarFiles-Bridging-Header.h */,
 				CDBF29F11B28D78B00C3B954 /* main.xib */,
 				CDBF29E91B28D78B00C3B954 /* Supporting Files */,
 			);
@@ -153,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBF29F01B28D78B00C3B954 /* TAGOrganiseSimilarFiles.m in Sources */,
+				CDA093D11B28F56B001AF7CE /* TAGOrganiseSimilarFiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +259,15 @@
 		CDBF29F71B28D78B00C3B954 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TAGOrganiseSimilarFiles/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAGOrganiseSimilarFiles/TAGOrganiseSimilarFiles-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -271,11 +275,14 @@
 		CDBF29F81B28D78B00C3B954 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TAGOrganiseSimilarFiles/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAGOrganiseSimilarFiles/TAGOrganiseSimilarFiles-Bridging-Header.h";
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
@@ -299,6 +306,7 @@
 				CDBF29F81B28D78B00C3B954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
