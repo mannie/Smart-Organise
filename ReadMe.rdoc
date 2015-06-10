@@ -3,7 +3,7 @@ VERSION::	1.2
 AUTHOR::	Mannie Tagarira
 CONTACT::	mannie@dimensionsunmarked.com
 URL::     www.dimensionsunmarked.com
-COPYRIGHT::	(c) 2009-2011 Mannie Tagarira
+COPYRIGHT::	(c) 2009-2015 Mannie Tagarira
 LICENCE::	BSD License (See LICENSE)
 
 == Requirements
