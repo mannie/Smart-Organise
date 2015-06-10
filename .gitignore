@@ -27,3 +27,4 @@ Collect Similar Items 10.5/Collect Similar Items.xcodeproj/*.perspectivev3
 
 Smart-Organise Updater/*
 *.xcuserstate
+*.xcbkptlist
