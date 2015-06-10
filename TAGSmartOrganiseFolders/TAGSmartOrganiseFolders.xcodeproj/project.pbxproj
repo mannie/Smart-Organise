@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDA093D41B28F5CC001AF7CE /* TAGSmartOrganiseFolders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA093D31B28F5CC001AF7CE /* TAGSmartOrganiseFolders.swift */; };
 		CDBF2A101B28D81A00C3B954 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDBF2A0E1B28D81A00C3B954 /* InfoPlist.strings */; };
-		CDBF2A131B28D81A00C3B954 /* TAGSmartOrganiseFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF2A121B28D81A00C3B954 /* TAGSmartOrganiseFolders.m */; };
 		CDBF2A161B28D81A00C3B954 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBF2A141B28D81A00C3B954 /* main.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDA093D21B28F5CC001AF7CE /* TAGSmartOrganiseFolders-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAGSmartOrganiseFolders-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDA093D31B28F5CC001AF7CE /* TAGSmartOrganiseFolders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGSmartOrganiseFolders.swift; sourceTree = "<group>"; };
 		CDBF2A091B28D81A00C3B954 /* TAGSmartOrganiseFolders.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGSmartOrganiseFolders.action; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBF2A0D1B28D81A00C3B954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDBF2A0F1B28D81A00C3B954 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CDBF2A111B28D81A00C3B954 /* TAGSmartOrganiseFolders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGSmartOrganiseFolders.h; sourceTree = "<group>"; };
-		CDBF2A121B28D81A00C3B954 /* TAGSmartOrganiseFolders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAGSmartOrganiseFolders.m; sourceTree = "<group>"; };
 		CDBF2A151B28D81A00C3B954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,8 +51,8 @@
 		CDBF2A0B1B28D81A00C3B954 /* TAGSmartOrganiseFolders */ = {
 			isa = PBXGroup;
 			children = (
-				CDBF2A111B28D81A00C3B954 /* TAGSmartOrganiseFolders.h */,
-				CDBF2A121B28D81A00C3B954 /* TAGSmartOrganiseFolders.m */,
+				CDA093D31B28F5CC001AF7CE /* TAGSmartOrganiseFolders.swift */,
+				CDA093D21B28F5CC001AF7CE /* TAGSmartOrganiseFolders-Bridging-Header.h */,
 				CDBF2A141B28D81A00C3B954 /* main.xib */,
 				CDBF2A0C1B28D81A00C3B954 /* Supporting Files */,
 			);
@@ -153,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBF2A131B28D81A00C3B954 /* TAGSmartOrganiseFolders.m in Sources */,
+				CDA093D41B28F5CC001AF7CE /* TAGSmartOrganiseFolders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +259,16 @@
 		CDBF2A1A1B28D81A00C3B954 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TAGSmartOrganiseFolders/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAGSmartOrganiseFolders/TAGSmartOrganiseFolders-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -271,11 +276,15 @@
 		CDBF2A1B1B28D81A00C3B954 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TAGSmartOrganiseFolders/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAGSmartOrganiseFolders/TAGSmartOrganiseFolders-Bridging-Header.h";
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
@@ -299,6 +308,7 @@
 				CDBF2A1B1B28D81A00C3B954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
