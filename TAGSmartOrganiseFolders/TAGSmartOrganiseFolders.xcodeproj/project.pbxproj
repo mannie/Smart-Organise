@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDBF2A101B28D81A00C3B954 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDBF2A0E1B28D81A00C3B954 /* InfoPlist.strings */; };
+		CDBF2A131B28D81A00C3B954 /* TAGSmartOrganiseFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF2A121B28D81A00C3B954 /* TAGSmartOrganiseFolders.m */; };
+		CDBF2A161B28D81A00C3B954 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBF2A141B28D81A00C3B954 /* main.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CDBF2A091B28D81A00C3B954 /* TAGSmartOrganiseFolders.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGSmartOrganiseFolders.action; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBF2A0D1B28D81A00C3B954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBF2A0F1B28D81A00C3B954 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDBF2A111B28D81A00C3B954 /* TAGSmartOrganiseFolders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGSmartOrganiseFolders.h; sourceTree = "<group>"; };
+		CDBF2A121B28D81A00C3B954 /* TAGSmartOrganiseFolders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAGSmartOrganiseFolders.m; sourceTree = "<group>"; };
+		CDBF2A151B28D81A00C3B954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDBF2A051B28D81A00C3B954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDBF29FF1B28D81A00C3B954 = {
+			isa = PBXGroup;
+			children = (
+				CDBF2A0B1B28D81A00C3B954 /* TAGSmartOrganiseFolders */,
+				CDBF2A0A1B28D81A00C3B954 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDBF2A0A1B28D81A00C3B954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF2A091B28D81A00C3B954 /* TAGSmartOrganiseFolders.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDBF2A0B1B28D81A00C3B954 /* TAGSmartOrganiseFolders */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF2A111B28D81A00C3B954 /* TAGSmartOrganiseFolders.h */,
+				CDBF2A121B28D81A00C3B954 /* TAGSmartOrganiseFolders.m */,
+				CDBF2A141B28D81A00C3B954 /* main.xib */,
+				CDBF2A0C1B28D81A00C3B954 /* Supporting Files */,
+			);
+			path = TAGSmartOrganiseFolders;
+			sourceTree = "<group>";
+		};
+		CDBF2A0C1B28D81A00C3B954 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF2A0D1B28D81A00C3B954 /* Info.plist */,
+				CDBF2A0E1B28D81A00C3B954 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDBF2A081B28D81A00C3B954 /* TAGSmartOrganiseFolders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBF2A191B28D81A00C3B954 /* Build configuration list for PBXNativeTarget "TAGSmartOrganiseFolders" */;
+			buildPhases = (
+				CDBF2A041B28D81A00C3B954 /* Sources */,
+				CDBF2A051B28D81A00C3B954 /* Frameworks */,
+				CDBF2A061B28D81A00C3B954 /* Resources */,
+				CDBF2A071B28D81A00C3B954 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAGSmartOrganiseFolders;
+			productName = TAGSmartOrganiseFolders;
+			productReference = CDBF2A091B28D81A00C3B954 /* TAGSmartOrganiseFolders.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDBF2A001B28D81A00C3B954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					CDBF2A081B28D81A00C3B954 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = CDBF2A031B28D81A00C3B954 /* Build configuration list for PBXProject "TAGSmartOrganiseFolders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDBF29FF1B28D81A00C3B954;
+			productRefGroup = CDBF2A0A1B28D81A00C3B954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDBF2A081B28D81A00C3B954 /* TAGSmartOrganiseFolders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDBF2A061B28D81A00C3B954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBF2A161B28D81A00C3B954 /* main.xib in Resources */,
+				CDBF2A101B28D81A00C3B954 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDBF2A071B28D81A00C3B954 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "amlint \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDBF2A041B28D81A00C3B954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBF2A131B28D81A00C3B954 /* TAGSmartOrganiseFolders.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDBF2A0E1B28D81A00C3B954 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDBF2A0F1B28D81A00C3B954 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDBF2A141B28D81A00C3B954 /* main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDBF2A151B28D81A00C3B954 /* Base */,
+			);
+			name = main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDBF2A171B28D81A00C3B954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CDBF2A181B28D81A00C3B954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CDBF2A1A1B28D81A00C3B954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TAGSmartOrganiseFolders/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Debug;
+		};
+		CDBF2A1B1B28D81A00C3B954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TAGSmartOrganiseFolders/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDBF2A031B28D81A00C3B954 /* Build configuration list for PBXProject "TAGSmartOrganiseFolders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBF2A171B28D81A00C3B954 /* Debug */,
+				CDBF2A181B28D81A00C3B954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBF2A191B28D81A00C3B954 /* Build configuration list for PBXNativeTarget "TAGSmartOrganiseFolders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBF2A1A1B28D81A00C3B954 /* Debug */,
+				CDBF2A1B1B28D81A00C3B954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDBF2A001B28D81A00C3B954 /* Project object */;
+}

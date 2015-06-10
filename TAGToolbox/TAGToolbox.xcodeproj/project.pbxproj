@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDBF29C61B28D5B800C3B954 /* TAGToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBF29C51B28D5B800C3B954 /* TAGToolbox.h */; };
+		CDBF29C81B28D5B800C3B954 /* TAGToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF29C71B28D5B800C3B954 /* TAGToolbox.m */; };
+		CDBF29CE1B28D5B800C3B954 /* libTAGToolbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBF29C21B28D5B800C3B954 /* libTAGToolbox.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDBF29CF1B28D5B800C3B954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDBF29BA1B28D5B800C3B954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBF29C11B28D5B800C3B954;
+			remoteInfo = TAGToolbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDBF29C21B28D5B800C3B954 /* libTAGToolbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTAGToolbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBF29C51B28D5B800C3B954 /* TAGToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGToolbox.h; sourceTree = "<group>"; };
+		CDBF29C71B28D5B800C3B954 /* TAGToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAGToolbox.m; sourceTree = "<group>"; };
+		CDBF29CD1B28D5B800C3B954 /* TAGToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBF29D31B28D5B800C3B954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDBF29BF1B28D5B800C3B954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBF29CA1B28D5B800C3B954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBF29CE1B28D5B800C3B954 /* libTAGToolbox.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDBF29B91B28D5B800C3B954 = {
+			isa = PBXGroup;
+			children = (
+				CDBF29C41B28D5B800C3B954 /* TAGToolbox */,
+				CDBF29D11B28D5B800C3B954 /* TAGToolboxTests */,
+				CDBF29C31B28D5B800C3B954 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDBF29C31B28D5B800C3B954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF29C21B28D5B800C3B954 /* libTAGToolbox.a */,
+				CDBF29CD1B28D5B800C3B954 /* TAGToolboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDBF29C41B28D5B800C3B954 /* TAGToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF29C51B28D5B800C3B954 /* TAGToolbox.h */,
+				CDBF29C71B28D5B800C3B954 /* TAGToolbox.m */,
+			);
+			path = TAGToolbox;
+			sourceTree = "<group>";
+		};
+		CDBF29D11B28D5B800C3B954 /* TAGToolboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF29D21B28D5B800C3B954 /* Supporting Files */,
+			);
+			path = TAGToolboxTests;
+			sourceTree = "<group>";
+		};
+		CDBF29D21B28D5B800C3B954 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF29D31B28D5B800C3B954 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CDBF29C01B28D5B800C3B954 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBF29C61B28D5B800C3B954 /* TAGToolbox.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CDBF29C11B28D5B800C3B954 /* TAGToolbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBF29D61B28D5B800C3B954 /* Build configuration list for PBXNativeTarget "TAGToolbox" */;
+			buildPhases = (
+				CDBF29BE1B28D5B800C3B954 /* Sources */,
+				CDBF29BF1B28D5B800C3B954 /* Frameworks */,
+				CDBF29C01B28D5B800C3B954 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAGToolbox;
+			productName = TAGToolbox;
+			productReference = CDBF29C21B28D5B800C3B954 /* libTAGToolbox.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CDBF29CC1B28D5B800C3B954 /* TAGToolboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBF29D91B28D5B800C3B954 /* Build configuration list for PBXNativeTarget "TAGToolboxTests" */;
+			buildPhases = (
+				CDBF29C91B28D5B800C3B954 /* Sources */,
+				CDBF29CA1B28D5B800C3B954 /* Frameworks */,
+				CDBF29CB1B28D5B800C3B954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBF29D01B28D5B800C3B954 /* PBXTargetDependency */,
+			);
+			name = TAGToolboxTests;
+			productName = TAGToolboxTests;
+			productReference = CDBF29CD1B28D5B800C3B954 /* TAGToolboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDBF29BA1B28D5B800C3B954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					CDBF29C11B28D5B800C3B954 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CDBF29CC1B28D5B800C3B954 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = CDBF29BD1B28D5B800C3B954 /* Build configuration list for PBXProject "TAGToolbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDBF29B91B28D5B800C3B954;
+			productRefGroup = CDBF29C31B28D5B800C3B954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDBF29C11B28D5B800C3B954 /* TAGToolbox */,
+				CDBF29CC1B28D5B800C3B954 /* TAGToolboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDBF29CB1B28D5B800C3B954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDBF29BE1B28D5B800C3B954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBF29C81B28D5B800C3B954 /* TAGToolbox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBF29C91B28D5B800C3B954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDBF29D01B28D5B800C3B954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBF29C11B28D5B800C3B954 /* TAGToolbox */;
+			targetProxy = CDBF29CF1B28D5B800C3B954 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDBF29D41B28D5B800C3B954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CDBF29D51B28D5B800C3B954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CDBF29D71B28D5B800C3B954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDBF29D81B28D5B800C3B954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDBF29DA1B28D5B800C3B954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TAGToolboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDBF29DB1B28D5B800C3B954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TAGToolboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDBF29BD1B28D5B800C3B954 /* Build configuration list for PBXProject "TAGToolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBF29D41B28D5B800C3B954 /* Debug */,
+				CDBF29D51B28D5B800C3B954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBF29D61B28D5B800C3B954 /* Build configuration list for PBXNativeTarget "TAGToolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBF29D71B28D5B800C3B954 /* Debug */,
+				CDBF29D81B28D5B800C3B954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDBF29D91B28D5B800C3B954 /* Build configuration list for PBXNativeTarget "TAGToolboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBF29DA1B28D5B800C3B954 /* Debug */,
+				CDBF29DB1B28D5B800C3B954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDBF29BA1B28D5B800C3B954 /* Project object */;
+}

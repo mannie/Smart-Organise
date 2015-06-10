@@ -10,4 +10,16 @@
    <FileRef
       location = "group:ReadMe.rdoc">
    </FileRef>
+   <FileRef
+      location = "group:TAGToolbox/TAGToolbox.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TAGOrganiseByDate/TAGOrganiseByDate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TAGToolbox/../TAGOrganiseSimilarFiles/TAGOrganiseSimilarFiles.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TAGSmartOrganiseFolders/TAGSmartOrganiseFolders.xcodeproj">
+   </FileRef>
 </Workspace>
