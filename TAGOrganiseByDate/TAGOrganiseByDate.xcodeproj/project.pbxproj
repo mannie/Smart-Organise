@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD5606121B293D52004713BC /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5606111B293D52004713BC /* TAGToolbox.framework */; };
+		CD5606131B293D55004713BC /* TAGToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD5606111B293D52004713BC /* TAGToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA093CE1B28F51E001AF7CE /* TAGOrganiseByDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA093CD1B28F51E001AF7CE /* TAGOrganiseByDate.swift */; };
 		CDBF2A2D1B28D84C00C3B954 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDBF2A2B1B28D84C00C3B954 /* InfoPlist.strings */; };
 		CDBF2A331B28D84C00C3B954 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBF2A311B28D84C00C3B954 /* main.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD5606091B293D00004713BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD5606131B293D55004713BC /* TAGToolbox.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CD5606111B293D52004713BC /* TAGToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAGToolbox.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug/TAGToolbox.framework"; sourceTree = "<group>"; };
 		CDA093CC1B28F51E001AF7CE /* TAGOrganiseByDate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAGOrganiseByDate-Bridging-Header.h"; sourceTree = "<group>"; };
 		CDA093CD1B28F51E001AF7CE /* TAGOrganiseByDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGOrganiseByDate.swift; sourceTree = "<group>"; };
 		CDBF2A261B28D84C00C3B954 /* TAGOrganiseByDate.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGOrganiseByDate.action; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5606121B293D52004713BC /* TAGToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +52,7 @@
 		CDBF2A1C1B28D84C00C3B954 = {
 			isa = PBXGroup;
 			children = (
+				CD5606111B293D52004713BC /* TAGToolbox.framework */,
 				CDBF2A281B28D84C00C3B954 /* TAGOrganiseByDate */,
 				CDBF2A271B28D84C00C3B954 /* Products */,
 			);
@@ -77,6 +95,7 @@
 			buildPhases = (
 				CDBF2A211B28D84C00C3B954 /* Sources */,
 				CDBF2A221B28D84C00C3B954 /* Frameworks */,
+				CD5606091B293D00004713BC /* CopyFiles */,
 				CDBF2A231B28D84C00C3B954 /* Resources */,
 				CDBF2A241B28D84C00C3B954 /* ShellScript */,
 			);
@@ -261,9 +280,19 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug",
+					"/Users/etagarira/Projects/Smart-Organise/TAGToolbox/build/Debug",
+				);
 				INFOPLIST_FILE = TAGOrganiseByDate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug",
+				);
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TAGOrganiseByDate/TAGOrganiseByDate-Bridging-Header.h";
@@ -277,9 +306,19 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug",
+					"/Users/etagarira/Projects/Smart-Organise/TAGToolbox/build/Debug",
+				);
 				INFOPLIST_FILE = TAGOrganiseByDate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug",
+				);
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TAGOrganiseByDate/TAGOrganiseByDate-Bridging-Header.h";
