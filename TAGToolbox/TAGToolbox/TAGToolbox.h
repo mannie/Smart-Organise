@@ -6,8 +6,14 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
-@interface TAGToolbox : NSObject
+//! Project version number for TAGToolbox.
+FOUNDATION_EXPORT double TAGToolboxVersionNumber;
 
-@end
+//! Project version string for TAGToolbox.
+FOUNDATION_EXPORT const unsigned char TAGToolboxVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <TAGToolbox/PublicHeader.h>
+
+

@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDBF29C11B28D5B800C3B954"
-               BuildableName = "libTAGToolbox.a"
+               BlueprintIdentifier = "CD5605D01B293862004713BC"
+               BuildableName = "TAGToolbox.framework"
                BlueprintName = "TAGToolbox"
                ReferencedContainer = "container:TAGToolbox.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDBF29CC1B28D5B800C3B954"
+               BlueprintIdentifier = "CD5605DB1B293862004713BC"
                BuildableName = "TAGToolboxTests.xctest"
                BlueprintName = "TAGToolboxTests"
                ReferencedContainer = "container:TAGToolbox.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDBF29CC1B28D5B800C3B954"
+               BlueprintIdentifier = "CD5605DB1B293862004713BC"
                BuildableName = "TAGToolboxTests.xctest"
                BlueprintName = "TAGToolboxTests"
                ReferencedContainer = "container:TAGToolbox.xcodeproj">
@@ -56,8 +56,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF29C11B28D5B800C3B954"
-            BuildableName = "libTAGToolbox.a"
+            BlueprintIdentifier = "CD5605D01B293862004713BC"
+            BuildableName = "TAGToolbox.framework"
             BlueprintName = "TAGToolbox"
             ReferencedContainer = "container:TAGToolbox.xcodeproj">
          </BuildableReference>
@@ -75,8 +75,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF29C11B28D5B800C3B954"
-            BuildableName = "libTAGToolbox.a"
+            BlueprintIdentifier = "CD5605D01B293862004713BC"
+            BuildableName = "TAGToolbox.framework"
             BlueprintName = "TAGToolbox"
             ReferencedContainer = "container:TAGToolbox.xcodeproj">
          </BuildableReference>
@@ -93,8 +93,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF29C11B28D5B800C3B954"
-            BuildableName = "libTAGToolbox.a"
+            BlueprintIdentifier = "CD5605D01B293862004713BC"
+            BuildableName = "TAGToolbox.framework"
             BlueprintName = "TAGToolbox"
             ReferencedContainer = "container:TAGToolbox.xcodeproj">
          </BuildableReference>
