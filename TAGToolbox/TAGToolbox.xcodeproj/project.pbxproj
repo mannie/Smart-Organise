@@ -12,6 +12,10 @@
 		CD56061F1B294678004713BC /* TAGStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56061E1B294678004713BC /* TAGStringExtensions.swift */; };
 		CD5606211B294686004713BC /* TAGStringExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5606201B294686004713BC /* TAGStringExtensionsTest.swift */; };
 		CD5606221B2946B0004713BC /* TAGStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56061E1B294678004713BC /* TAGStringExtensions.swift */; };
+		CD5606241B294A10004713BC /* TAGFileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5606231B294A10004713BC /* TAGFileManagerExtensions.swift */; };
+		CD5606251B294A10004713BC /* TAGFileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5606231B294A10004713BC /* TAGFileManagerExtensions.swift */; };
+		CD5606271B294A18004713BC /* TAGFileManagerExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5606261B294A18004713BC /* TAGFileManagerExtensionsTest.swift */; };
+		CD5606741B2A09FF004713BC /* Fixtures in Resources */ = {isa = PBXBuildFile; fileRef = CD5606731B2A09FF004713BC /* Fixtures */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,9 @@
 		CD5605E21B293862004713BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD56061E1B294678004713BC /* TAGStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGStringExtensions.swift; sourceTree = "<group>"; };
 		CD5606201B294686004713BC /* TAGStringExtensionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGStringExtensionsTest.swift; sourceTree = "<group>"; };
+		CD5606231B294A10004713BC /* TAGFileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGFileManagerExtensions.swift; sourceTree = "<group>"; };
+		CD5606261B294A18004713BC /* TAGFileManagerExtensionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGFileManagerExtensionsTest.swift; sourceTree = "<group>"; };
+		CD5606731B2A09FF004713BC /* Fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fixtures; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				CD5605D61B293862004713BC /* TAGToolbox.h */,
+				CD5606231B294A10004713BC /* TAGFileManagerExtensions.swift */,
 				CD56061E1B294678004713BC /* TAGStringExtensions.swift */,
 				CD5605D41B293862004713BC /* Supporting Files */,
 			);
@@ -92,7 +100,9 @@
 		CD5605E01B293862004713BC /* TAGToolboxTests */ = {
 			isa = PBXGroup;
 			children = (
+				CD5606261B294A18004713BC /* TAGFileManagerExtensionsTest.swift */,
 				CD5606201B294686004713BC /* TAGStringExtensionsTest.swift */,
+				CD5606731B2A09FF004713BC /* Fixtures */,
 				CD5605E11B293862004713BC /* Supporting Files */,
 			);
 			path = TAGToolboxTests;
@@ -202,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5606741B2A09FF004713BC /* Fixtures in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5606241B294A10004713BC /* TAGFileManagerExtensions.swift in Sources */,
 				CD56061F1B294678004713BC /* TAGStringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5606271B294A18004713BC /* TAGFileManagerExtensionsTest.swift in Sources */,
+				CD5606251B294A10004713BC /* TAGFileManagerExtensions.swift in Sources */,
 				CD5606221B2946B0004713BC /* TAGStringExtensions.swift in Sources */,
 				CD5606211B294686004713BC /* TAGStringExtensionsTest.swift in Sources */,
 			);
