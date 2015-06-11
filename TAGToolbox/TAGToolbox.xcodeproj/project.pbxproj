@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CD5605D71B293862004713BC /* TAGToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5605D61B293862004713BC /* TAGToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD5605DD1B293862004713BC /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5605D11B293862004713BC /* TAGToolbox.framework */; };
-		CD5605E41B293862004713BC /* TAGToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5605E31B293862004713BC /* TAGToolboxTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +27,6 @@
 		CD5605D61B293862004713BC /* TAGToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGToolbox.h; sourceTree = "<group>"; };
 		CD5605DC1B293862004713BC /* TAGToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5605E21B293862004713BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD5605E31B293862004713BC /* TAGToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAGToolboxTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 		CD5605E01B293862004713BC /* TAGToolboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD5605E31B293862004713BC /* TAGToolboxTests.swift */,
 				CD5605E11B293862004713BC /* Supporting Files */,
 			);
 			path = TAGToolboxTests;
@@ -215,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5605E41B293862004713BC /* TAGToolboxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
