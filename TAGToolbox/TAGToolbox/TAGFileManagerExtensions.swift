@@ -47,6 +47,18 @@ public extension NSFileManager {
         return uniquePath
     }
     
+    func subpathsAtPath(path: String, withExtension fileExt: String, depth: Int=0) -> Set<String> {
+        assert(!path.isEmpty, "Path cannot be empty")
+        
+        let maxCountOfPathComponents = depth + 1
+        
+        let filteredSubpaths = subpathsAtPath(path)?.filter {
+            $0.pathComponents.count <= maxCountOfPathComponents && $0.pathExtension == fileExt
+        }
+    
+        return Set<String>(filteredSubpaths as! Array<String>)
+    }
+    
 }
 
 extension NSFileManager {
