@@ -9,27 +9,6 @@
 import Automator
 import TAGToolbox
 
-extension NSFileManager {
-    
-    func organiseFilesAtPath(path: String, withExtension fileExt: String) -> Set<String> {
-        var outputFilePaths = Set<String>()
-
-        changeCurrentDirectoryPath(path)
-        createDirectoryAtPath(fileExt, withIntermediateDirectories: true, attributes: nil, error: nil)
-        
-        for sourcePath in subpathsAtPath(".", withExtension: fileExt) {
-            let destinationPath = collisionSafePath(fileExt.stringByAppendingPathComponent(sourcePath))
-
-            if moveItemAtPath(sourcePath, toPath: destinationPath, error: nil) {
-                outputFilePaths.insert(path.stringByAppendingPathComponent(destinationPath))
-            }
-        }
-        
-        return outputFilePaths
-    }
-    
-}
-
 class TAGOrganiseSimilarFiles: AMBundleAction {
 
     override func runWithInput(input: AnyObject!, error: NSErrorPointer) -> AnyObject! {

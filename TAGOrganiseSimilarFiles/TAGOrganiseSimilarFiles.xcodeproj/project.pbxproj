@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD5606781B2A375D004713BC /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5606771B2A375D004713BC /* TAGToolbox.framework */; };
+		CD56067A1B2A376F004713BC /* TAGToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD5606771B2A375D004713BC /* TAGToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA093D11B28F56B001AF7CE /* TAGOrganiseSimilarFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA093D01B28F56B001AF7CE /* TAGOrganiseSimilarFiles.swift */; };
 		CDBF29ED1B28D78B00C3B954 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDBF29EB1B28D78B00C3B954 /* InfoPlist.strings */; };
 		CDBF29F31B28D78B00C3B954 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBF29F11B28D78B00C3B954 /* main.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD5606791B2A3763004713BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD56067A1B2A376F004713BC /* TAGToolbox.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CD5606771B2A375D004713BC /* TAGToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAGToolbox.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug/TAGToolbox.framework"; sourceTree = "<group>"; };
 		CDA093CF1B28F56B001AF7CE /* TAGOrganiseSimilarFiles-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAGOrganiseSimilarFiles-Bridging-Header.h"; sourceTree = "<group>"; };
 		CDA093D01B28F56B001AF7CE /* TAGOrganiseSimilarFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAGOrganiseSimilarFiles.swift; sourceTree = "<group>"; };
 		CDBF29E61B28D78B00C3B954 /* TAGOrganiseSimilarFiles.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGOrganiseSimilarFiles.action; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5606781B2A375D004713BC /* TAGToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +52,7 @@
 		CDBF29DC1B28D78B00C3B954 = {
 			isa = PBXGroup;
 			children = (
+				CD5606771B2A375D004713BC /* TAGToolbox.framework */,
 				CDBF29E81B28D78B00C3B954 /* TAGOrganiseSimilarFiles */,
 				CDBF29E71B28D78B00C3B954 /* Products */,
 			);
@@ -77,6 +95,7 @@
 			buildPhases = (
 				CDBF29E11B28D78B00C3B954 /* Sources */,
 				CDBF29E21B28D78B00C3B954 /* Frameworks */,
+				CD5606791B2A3763004713BC /* CopyFiles */,
 				CDBF29E31B28D78B00C3B954 /* Resources */,
 				CDBF29E41B28D78B00C3B954 /* ShellScript */,
 			);
@@ -261,6 +280,12 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/etagarira/Projects/Smart-Organise/TAGToolbox/build/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = TAGOrganiseSimilarFiles/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -277,6 +302,12 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/etagarira/Projects/Smart-Organise/TAGToolbox/build/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = TAGOrganiseSimilarFiles/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";

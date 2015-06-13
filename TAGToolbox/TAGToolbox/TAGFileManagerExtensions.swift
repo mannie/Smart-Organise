@@ -10,6 +10,36 @@ import Foundation
 
 public extension NSFileManager {
     
+    private func exportablePathFromPath(path: String, relativeTo relativePath: String) -> String {
+        return relativePath == "." ? path : relativePath.stringByAppendingPathComponent(path)
+    }
+    
+    func organiseFilesAtPath(path: String, withExtension fileExt: String) -> Set<String> {
+        var outputFilePaths = Set<String>()
+        
+        let lastCurrectDirectoryPath = currentDirectoryPath
+        
+        changeCurrentDirectoryPath(path)
+        createDirectoryAtPath(fileExt, withIntermediateDirectories: true, attributes: nil, error: nil)
+        
+        for sourcePath in subpathsAtPath(".", withExtension: fileExt) {
+            if fileExt.isEmpty {
+                outputFilePaths.insert(exportablePathFromPath(sourcePath, relativeTo: path))
+                continue
+            }
+            
+            let destinationPath = collisionSafePath(fileExt.stringByAppendingPathComponent(sourcePath))
+            
+            if moveItemAtPath(sourcePath, toPath: destinationPath, error: nil) {
+                outputFilePaths.insert(exportablePathFromPath(destinationPath, relativeTo: path))
+            }
+        }
+        
+        changeCurrentDirectoryPath(lastCurrectDirectoryPath)
+        
+        return outputFilePaths
+    }
+
     func collisionSafePath(path: String) -> String {
         if path.isEmpty {
             return path
@@ -51,7 +81,7 @@ public extension NSFileManager {
         assert(!path.isEmpty, "Path cannot be empty")
         
         let maxCountOfPathComponents = depth + 1
-        
+
         let filteredSubpaths = subpathsAtPath(path)?.filter {
             $0.pathComponents.count <= maxCountOfPathComponents && $0.pathExtension == fileExt
         }
@@ -61,12 +91,24 @@ public extension NSFileManager {
     
 }
 
+// MARK: - Testing -
+
 extension NSFileManager {
     
     func pathForFixtures(name: String) -> String {
         let suffix = "Tests".stringByAppendingPathComponent("Fixtures").stringByAppendingPathComponent(name.pathExtension)
         let subpaths = subpathsAtPath(currentDirectoryPath) as! Array<String>
         return subpaths.filter { $0.hasSuffix(suffix) }.first!
+    }
+    
+    class func swizzle(selector: Selector, withSelector replacementSelector: Selector) {
+        let targetClass: AnyClass = object_getClass(NSFileManager())
+        
+        var originalMethod = class_getInstanceMethod(targetClass, selector)
+        var replacementMethod = class_getInstanceMethod(targetClass, replacementSelector)
+
+        assert(originalMethod != nil && replacementMethod != nil)
+        method_exchangeImplementations(originalMethod, replacementMethod)
     }
     
 }

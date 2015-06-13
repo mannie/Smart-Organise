@@ -14,6 +14,17 @@ class TAGFileManagerExtensionsTest: XCTestCase {
     let fileManager = NSFileManager.defaultManager()
     let fixturesPath = NSFileManager.defaultManager().pathForFixtures(className())
     
+    override class func initialize() {
+        struct Static {
+            static var token: dispatch_once_t = 0
+        }
+        
+        dispatch_once(&Static.token) {
+            NSFileManager.swizzle(Selector("createDirectoryAtPath:withIntermediateDirectories:attributes:error:"), withSelector: Selector("_createDirectoryAtPath:withIntermediateDirectories:attributes:error:"))
+            NSFileManager.swizzle(Selector("moveItemAtPath:toPath:error:"), withSelector: Selector("_moveItemAtPath:toPath:error:"))
+        }
+    }
+    
     override func setUp() {
         fileManager.changeCurrentDirectoryPath(fixturesPath)
     }
@@ -47,13 +58,13 @@ class TAGFileManagerExtensionsTest: XCTestCase {
     }
         
     func testSubpathsAtPathWithExtensionDepth() {
+        let dsStores = [ ".DS_Store", "In Folder/.DS_Store" ]
+        
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: ""), fileManager.subpathsAtPath(".", withExtension: "", depth: 0))
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "ext"), fileManager.subpathsAtPath(".", withExtension: "ext", depth: 0))
         
         let level0NoExt = [ "File 1", "File 2", "File 3", "In Folder" ]
         let level0WithExt = [ "File 3.ext", "File 4.ext", "File 5.ext" ]
-
-        let dsStores = [".DS_Store", "In Folder/.DS_Store"]
         
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "", depth: 0).subtract(dsStores), Set(level0NoExt))
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "ext", depth: 0), Set(level0WithExt))
@@ -69,5 +80,40 @@ class TAGFileManagerExtensionsTest: XCTestCase {
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "", depth: 2), fileManager.subpathsAtPath(".", withExtension: "", depth: 1))
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "ext", depth: 2), fileManager.subpathsAtPath(".", withExtension: "ext", depth: 1))
     }
+    
+    func testOrganiseFilesAtPathWithExtension() {
+        let dsStores = [ ".DS_Store", "In Folder/.DS_Store" ]
+
+        let level0NoExt = [ "File 1", "File 2", "File 3", "In Folder" ]
+        let level0Ext = [ "ext/File 3.ext", "ext/File 4.ext", "ext/File 5.ext" ]
+        let level0Ext2 = [ "ext2/File 5.ext2", "ext2/File 6.ext2", "ext2/File 7.ext2" ]
+        
+        XCTAssertEqual(fileManager.organiseFilesAtPath(".", withExtension: "").subtract(dsStores), Set(level0NoExt))
+        XCTAssertEqual(fileManager.organiseFilesAtPath(".", withExtension: "ext").subtract(dsStores), Set(level0Ext))
+        XCTAssertEqual(fileManager.organiseFilesAtPath(".", withExtension: "ext2").subtract(dsStores), Set(level0Ext2))
+     
+        let mapper = { "In Folder".stringByAppendingPathComponent($0) }
+        
+        let level1NoExt: [String] = level0NoExt.map(mapper)
+        let level1Ext: [String] = level0Ext.map(mapper)
+        let level1Ext2: [String] = level0Ext2.map(mapper)
+
+        XCTAssertEqual(fileManager.organiseFilesAtPath("In Folder", withExtension: "").subtract(dsStores), Set(level1NoExt).subtract(["In Folder/In Folder"]))
+        XCTAssertEqual(fileManager.organiseFilesAtPath("In Folder", withExtension: "ext").subtract(dsStores), Set(level1Ext))
+        XCTAssertEqual(fileManager.organiseFilesAtPath("In Folder", withExtension: "ext2").subtract(dsStores), Set(level1Ext2))
+    }
 
 }
+
+extension NSFileManager {
+    
+    func _createDirectoryAtPath(path: String, withIntermediateDirectories createIntermediates: Bool, attributes: [NSObject : AnyObject]?, error: NSErrorPointer) -> Bool {
+        return true
+    }
+    
+    func _moveItemAtPath(srcPath: String, toPath dstPath: String, error: NSErrorPointer) -> Bool {
+        return true
+    }
+    
+}
+
