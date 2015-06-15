@@ -17,6 +17,11 @@ public extension NSFileManager {
     func organiseFilesAtPath(path: String, withExtension fileExt: String) -> Set<String> {
         var outputFilePaths = Set<String>()
         
+        var isDirectory = ObjCBool(false)
+        if !fileExistsAtPath(path, isDirectory: &isDirectory) || !isDirectory {
+            return outputFilePaths
+        }
+        
         let lastCurrectDirectoryPath = currentDirectoryPath
         
         changeCurrentDirectoryPath(path)
@@ -79,6 +84,10 @@ public extension NSFileManager {
     
     func subpathsAtPath(path: String, withExtension fileExt: String, depth: Int=0) -> Set<String> {
         assert(!path.isEmpty, "Path cannot be empty")
+
+        if !fileExistsAtPath(path) {
+            return Set()
+        }
         
         let maxCountOfPathComponents = depth + 1
 

@@ -58,6 +58,14 @@ class TAGFileManagerExtensionsTest: XCTestCase {
     }
         
     func testSubpathsAtPathWithExtensionDepth() {
+        XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "someRandomFakeExt", depth: 0), Set())
+        XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "someRandomFakeExt", depth: 1), Set())
+        XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "someRandomFakeExt", depth: 2), Set())
+
+        XCTAssertEqual(fileManager.subpathsAtPath("Some Random Fake Folder", withExtension: "ext", depth: 0), Set())
+        XCTAssertEqual(fileManager.subpathsAtPath("Some Random Fake Folder", withExtension: "ext", depth: 1), Set())
+        XCTAssertEqual(fileManager.subpathsAtPath("Some Random Fake Folder", withExtension: "ext", depth: 2), Set())
+        
         let dsStores = [ ".DS_Store", "In Folder/.DS_Store" ]
         
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: ""), fileManager.subpathsAtPath(".", withExtension: "", depth: 0))
@@ -82,6 +90,13 @@ class TAGFileManagerExtensionsTest: XCTestCase {
     }
     
     func testOrganiseFilesAtPathWithExtension() {
+        XCTAssertEqual(fileManager.organiseFilesAtPath(".", withExtension: "someRandomFakeExt"), Set())
+        XCTAssertEqual(fileManager.organiseFilesAtPath("File 1", withExtension: "someRandomFakeExt"), Set())
+        XCTAssertEqual(fileManager.organiseFilesAtPath("In Folder", withExtension: "someRandomFakeExt"), Set())
+        
+        XCTAssertEqual(fileManager.organiseFilesAtPath("File 1", withExtension: "ext"), Set())
+        XCTAssertEqual(fileManager.organiseFilesAtPath("Some Random Fake Folder", withExtension: "ext"), Set())
+        
         let dsStores = [ ".DS_Store", "In Folder/.DS_Store" ]
 
         let level0NoExt = [ "File 1", "File 2", "File 3", "In Folder" ]
