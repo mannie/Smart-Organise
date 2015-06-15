@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDBF2A251B28D84C00C3B954"
-               BuildableName = "TAGOrganiseByDate.action"
-               BlueprintName = "TAGOrganiseByDate"
-               ReferencedContainer = "container:TAGOrganiseByDate.xcodeproj">
+               BlueprintIdentifier = "CDFD43791B2EA288000A61C7"
+               BuildableName = "Organise By Date.action"
+               BlueprintName = "Organise By Date"
+               ReferencedContainer = "container:Organise By Date.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -41,21 +41,20 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
-         BundleIdentifier = "com.apple.Automator"
          FilePath = "/Applications/Automator.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF2A251B28D84C00C3B954"
-            BuildableName = "TAGOrganiseByDate.action"
-            BlueprintName = "TAGOrganiseByDate"
-            ReferencedContainer = "container:TAGOrganiseByDate.xcodeproj">
+            BlueprintIdentifier = "CDFD43791B2EA288000A61C7"
+            BuildableName = "Organise By Date.action"
+            BlueprintName = "Organise By Date"
+            ReferencedContainer = "container:Organise By Date.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-action &quot;$(BUILD_DIR)/Debug/TAGOrganiseByDate.action&quot;"
+            argument = "-action &quot;$(BUILD_DIR)/Debug/Organise By Date.action&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -71,10 +70,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF2A251B28D84C00C3B954"
-            BuildableName = "TAGOrganiseByDate.action"
-            BlueprintName = "TAGOrganiseByDate"
-            ReferencedContainer = "container:TAGOrganiseByDate.xcodeproj">
+            BlueprintIdentifier = "CDFD43791B2EA288000A61C7"
+            BuildableName = "Organise By Date.action"
+            BlueprintName = "Organise By Date"
+            ReferencedContainer = "container:Organise By Date.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -9,9 +9,9 @@
 import Automator
 import TAGToolbox
 
-class TAGOrganiseByDate: AMBundleAction {
-
-    override func runWithInput(input: AnyObject!, error: NSErrorPointer) -> AnyObject! {        
+class OrganiseByDate: AMBundleAction {
+    
+    override func runWithInput(input: AnyObject!, error: NSErrorPointer) -> AnyObject! {
         let inputFilePaths = Set<String>(input as! Array<String>)
         var outputFilePaths = Set<String>()
         
@@ -26,7 +26,7 @@ class TAGOrganiseByDate: AMBundleAction {
             
             let parentDirectory = sourcePath.stringByDeletingLastPathComponent
             var destinationPath = parentDirectory.stringByAppendingPathComponent(dateString)
-
+            
             fileManager.createDirectoryAtPath(destinationPath, withIntermediateDirectories: true, attributes: nil, error: nil)
             
             destinationPath = destinationPath.stringByAppendingPathComponent(sourcePath.lastPathComponent)
