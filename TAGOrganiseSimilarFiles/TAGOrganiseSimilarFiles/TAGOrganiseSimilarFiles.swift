@@ -16,6 +16,10 @@ class TAGOrganiseSimilarFiles: AMBundleAction {
         var outputFilePaths = Set<String>()
 
         for sourcePath in inputFilePaths {
+            if !fileManager.fileExistsAtPath(sourcePath) {
+                continue
+            }
+
             let fileExt = sourcePath.pathExtension
             if fileExt.isEmpty {
                 outputFilePaths.insert(sourcePath)
