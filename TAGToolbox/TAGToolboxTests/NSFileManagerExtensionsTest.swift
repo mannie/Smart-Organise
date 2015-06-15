@@ -1,5 +1,5 @@
 //
-//  TAGFileManagerExtensionsTest.swift
+//  NSFileManagerExtensionsTest.swift
 //  TAGToolbox
 //
 //  Created by etagarira on 10/06/2015.
@@ -9,7 +9,7 @@
 import Cocoa
 import XCTest
 
-class TAGFileManagerExtensionsTest: XCTestCase {
+class NSFileManagerExtensionsTest: XCTestCase {
 
     let fileManager = NSFileManager.defaultManager()
     let fixturesPath = NSFileManager.defaultManager().pathForFixtures(className())
