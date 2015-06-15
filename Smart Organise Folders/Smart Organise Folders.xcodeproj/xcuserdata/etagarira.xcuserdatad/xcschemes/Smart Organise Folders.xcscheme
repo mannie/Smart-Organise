@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDBF2A081B28D81A00C3B954"
-               BuildableName = "TAGSmartOrganiseFolders.action"
-               BlueprintName = "TAGSmartOrganiseFolders"
-               ReferencedContainer = "container:TAGSmartOrganiseFolders.xcodeproj">
+               BlueprintIdentifier = "CDFD43C41B2EA7E5000A61C7"
+               BuildableName = "Smart Organise Folders.action"
+               BlueprintName = "Smart Organise Folders"
+               ReferencedContainer = "container:Smart Organise Folders.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -41,20 +41,21 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
+         BundleIdentifier = "com.apple.Automator"
          FilePath = "/Applications/Automator.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF2A081B28D81A00C3B954"
-            BuildableName = "TAGSmartOrganiseFolders.action"
-            BlueprintName = "TAGSmartOrganiseFolders"
-            ReferencedContainer = "container:TAGSmartOrganiseFolders.xcodeproj">
+            BlueprintIdentifier = "CDFD43C41B2EA7E5000A61C7"
+            BuildableName = "Smart Organise Folders.action"
+            BlueprintName = "Smart Organise Folders"
+            ReferencedContainer = "container:Smart Organise Folders.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-action &quot;$(BUILD_DIR)/Debug/TAGSmartOrganiseFolders.action&quot;"
+            argument = "-action &quot;$(BUILD_DIR)/Debug/Smart Organise Folders.action&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -70,10 +71,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF2A081B28D81A00C3B954"
-            BuildableName = "TAGSmartOrganiseFolders.action"
-            BlueprintName = "TAGSmartOrganiseFolders"
-            ReferencedContainer = "container:TAGSmartOrganiseFolders.xcodeproj">
+            BlueprintIdentifier = "CDFD43C41B2EA7E5000A61C7"
+            BuildableName = "Smart Organise Folders.action"
+            BlueprintName = "Smart Organise Folders"
+            ReferencedContainer = "container:Smart Organise Folders.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

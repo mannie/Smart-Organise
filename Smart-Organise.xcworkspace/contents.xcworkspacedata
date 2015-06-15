@@ -11,15 +11,15 @@
       location = "group:ReadMe.rdoc">
    </FileRef>
    <FileRef
+      location = "group:TAGToolbox/TAGToolbox.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Organise By Date/Organise By Date.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Organise Similar Files/Organise Similar Files.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TAGToolbox/TAGToolbox.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:TAGSmartOrganiseFolders/TAGSmartOrganiseFolders.xcodeproj">
+      location = "group:Smart Organise Folders/Smart Organise Folders.xcodeproj">
    </FileRef>
 </Workspace>

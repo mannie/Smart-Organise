@@ -10,11 +10,11 @@ import Automator
 import TAGToolbox
 
 class SmartOrganiseFolders: AMBundleAction {
-
+    
     override func runWithInput(input: AnyObject!, error: NSErrorPointer) -> AnyObject! {
         let inputFilePaths = Set<String>(input as! Array<String>)
         var outputFilePaths = Set<String>()
-
+        
         let fileManager = NSFileManager.defaultManager()
         
         for path in inputFilePaths {
@@ -22,7 +22,7 @@ class SmartOrganiseFolders: AMBundleAction {
             if !fileManager.fileExistsAtPath(path, isDirectory: &isDirectory) || !isDirectory {
                 continue
             }
-
+            
             let fileExts = fileManager.contentsOfDirectoryAtPath(path, error: nil)?.map { $0.pathExtension }
             for fileExt in fileExts! {
                 if fileExt.isEmpty {

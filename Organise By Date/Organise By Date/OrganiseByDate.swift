@@ -1,6 +1,6 @@
 //
 //  OrganiseByDate.swift
-//  OrganiseByDate
+//  Organise By Date
 //
 //  Created by etagarira on 10/06/2015.
 //

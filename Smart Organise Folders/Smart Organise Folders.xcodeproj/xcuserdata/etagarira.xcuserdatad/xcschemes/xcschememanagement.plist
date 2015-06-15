@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TAGSmartOrganiseFolders.xcscheme</key>
+		<key>Smart Organise Folders.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CDBF2A081B28D81A00C3B954</key>
+		<key>CDFD43C41B2EA7E5000A61C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
