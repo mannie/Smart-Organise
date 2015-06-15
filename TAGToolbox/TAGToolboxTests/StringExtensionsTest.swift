@@ -1,5 +1,5 @@
 //
-//  TAGStringExtensionsTest.swift
+//  StringExtensionsTest.swift
 //  TAGToolbox
 //
 //  Created by etagarira on 10/06/2015.
@@ -9,7 +9,7 @@
 import Cocoa
 import XCTest
 
-class TAGStringExtensionsTest: XCTestCase {
+class StringExtensionsTest: XCTestCase {
 
     func testDateFormatting() {
         let dateComponents = NSDateComponents()
