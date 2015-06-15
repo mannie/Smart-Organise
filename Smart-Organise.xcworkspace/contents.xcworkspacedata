@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Organise By Date/Organise By Date.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:LICENSE">
    </FileRef>
    <FileRef
@@ -14,10 +11,13 @@
       location = "group:ReadMe.rdoc">
    </FileRef>
    <FileRef
-      location = "group:TAGToolbox/TAGToolbox.xcodeproj">
+      location = "group:Organise By Date/Organise By Date.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TAGToolbox/../TAGOrganiseSimilarFiles/TAGOrganiseSimilarFiles.xcodeproj">
+      location = "group:Organise Similar Files/Organise Similar Files.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TAGToolbox/TAGToolbox.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TAGSmartOrganiseFolders/TAGSmartOrganiseFolders.xcodeproj">

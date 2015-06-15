@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDBF29E51B28D78B00C3B954"
-               BuildableName = "TAGOrganiseSimilarFiles.action"
-               BlueprintName = "TAGOrganiseSimilarFiles"
-               ReferencedContainer = "container:TAGOrganiseSimilarFiles.xcodeproj">
+               BlueprintIdentifier = "CDFD43A01B2EA51D000A61C7"
+               BuildableName = "Organise Similar Files.action"
+               BlueprintName = "Organise Similar Files"
+               ReferencedContainer = "container:Organise Similar Files.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,15 +47,15 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF29E51B28D78B00C3B954"
-            BuildableName = "TAGOrganiseSimilarFiles.action"
-            BlueprintName = "TAGOrganiseSimilarFiles"
-            ReferencedContainer = "container:TAGOrganiseSimilarFiles.xcodeproj">
+            BlueprintIdentifier = "CDFD43A01B2EA51D000A61C7"
+            BuildableName = "Organise Similar Files.action"
+            BlueprintName = "Organise Similar Files"
+            ReferencedContainer = "container:Organise Similar Files.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-action &quot;$(BUILD_DIR)/Debug/TAGOrganiseSimilarFiles.action&quot;"
+            argument = "-action &quot;$(BUILD_DIR)/Debug/Organise Similar Files.action&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -71,10 +71,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBF29E51B28D78B00C3B954"
-            BuildableName = "TAGOrganiseSimilarFiles.action"
-            BlueprintName = "TAGOrganiseSimilarFiles"
-            ReferencedContainer = "container:TAGOrganiseSimilarFiles.xcodeproj">
+            BlueprintIdentifier = "CDFD43A01B2EA51D000A61C7"
+            BuildableName = "Organise Similar Files.action"
+            BlueprintName = "Organise Similar Files"
+            ReferencedContainer = "container:Organise Similar Files.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

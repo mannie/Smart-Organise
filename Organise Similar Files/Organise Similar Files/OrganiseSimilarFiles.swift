@@ -10,16 +10,17 @@ import Automator
 import TAGToolbox
 
 class OrganiseSimilarFiles: AMBundleAction {
-
+    
     override func runWithInput(input: AnyObject!, error: NSErrorPointer) -> AnyObject! {
         let inputFilePaths = Set<String>(input as! Array<String>)
         var outputFilePaths = Set<String>()
-
+        
+        let fileManager = NSFileManager.defaultManager()
         for sourcePath in inputFilePaths {
             if !fileManager.fileExistsAtPath(sourcePath) {
                 continue
             }
-
+            
             let fileExt = sourcePath.pathExtension
             if fileExt.isEmpty {
                 outputFilePaths.insert(sourcePath)
@@ -27,7 +28,7 @@ class OrganiseSimilarFiles: AMBundleAction {
             }
             
             let parentDirectory = sourcePath.stringByDeletingLastPathComponent
-            let organisedFiles = NSFileManager.defaultManager().organiseFilesAtPath(parentDirectory, withExtension: fileExt)
+            let organisedFiles = fileManager.organiseFilesAtPath(parentDirectory, withExtension: fileExt)
             outputFilePaths.unionInPlace(organisedFiles)
         }
         
