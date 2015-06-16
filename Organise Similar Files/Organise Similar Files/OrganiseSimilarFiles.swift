@@ -17,18 +17,8 @@ class OrganiseSimilarFiles: AMBundleAction {
         
         let fileManager = NSFileManager.defaultManager()
         for sourcePath in inputFilePaths {
-            if !fileManager.fileExistsAtPath(sourcePath) {
-                continue
-            }
-            
-            let fileExt = sourcePath.pathExtension
-            if fileExt.isEmpty {
-                outputFilePaths.insert(sourcePath)
-                continue
-            }
-            
             let parentDirectory = sourcePath.stringByDeletingLastPathComponent
-            let organisedFiles = fileManager.organiseDirectoryAtPath(parentDirectory, withExtension: fileExt)
+            let organisedFiles = fileManager.organiseDirectoryAtPath(parentDirectory, withExtension: sourcePath.pathExtension)
             outputFilePaths.unionInPlace(organisedFiles)
         }
         

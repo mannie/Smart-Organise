@@ -13,7 +13,7 @@ public extension NSFileManager {
     private func exportablePathFromPath(path: String, relativeTo relativePath: String) -> String {
         return relativePath == "." ? path : relativePath.stringByAppendingPathComponent(path)
     }
-
+    
     func organiseItemAtPath(path: String, withDate date: NSDate) -> String? {
         var outputFilePath: String? = nil
 
@@ -49,9 +49,7 @@ public extension NSFileManager {
         }
         
         let lastCurrentDirectoryPath = currentDirectoryPath
-        
         changeCurrentDirectoryPath(path)
-        createDirectoryAtPath(fileExt, withIntermediateDirectories: true, attributes: nil, error: nil)
         
         for sourcePath in subpathsAtPath(".", withExtension: fileExt) {
             if fileExt.isEmpty {
@@ -59,8 +57,16 @@ public extension NSFileManager {
                 continue
             }
             
+            // TODO: allow for some override control
+            let exclusions = Set(arrayLiteral: "download", "part")
+            if exclusions.contains(fileExt) {
+                outputFilePaths.insert(exportablePathFromPath(sourcePath, relativeTo: path))
+                continue
+            }
+
             let destinationPath = collisionSafePath(fileExt.stringByAppendingPathComponent(sourcePath))
             
+            createDirectoryAtPath(fileExt, withIntermediateDirectories: true, attributes: nil, error: nil)
             if moveItemAtPath(sourcePath, toPath: destinationPath, error: nil) {
                 outputFilePaths.insert(exportablePathFromPath(destinationPath, relativeTo: path))
             }

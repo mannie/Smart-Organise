@@ -99,6 +99,12 @@ class NSFileManagerExtensionsTest: XCTestCase {
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("File 1", withExtension: "ext"), Set())
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("Some Random Fake Folder", withExtension: "ext"), Set())
         
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "download"), Set(arrayLiteral: "Ignore.download"))
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "part"), Set(arrayLiteral: "Ignore.ext.part"))
+
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "download"), Set(arrayLiteral: "In Folder/Ignore.download"))
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "part"), Set(arrayLiteral: "In Folder/Ignore.ext.part"))
+
         let dsStores = [ ".DS_Store", "In Folder/.DS_Store" ]
 
         let level0NoExt = [ "File 1", "File 2", "File 3", "In Folder" ]

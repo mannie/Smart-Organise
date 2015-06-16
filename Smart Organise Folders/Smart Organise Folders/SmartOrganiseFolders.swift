@@ -25,15 +25,6 @@ class SmartOrganiseFolders: AMBundleAction {
             
             let fileExts = fileManager.contentsOfDirectoryAtPath(path, error: nil)?.map { $0.pathExtension }
             for fileExt in fileExts! {
-                if fileExt.isEmpty {
-                    continue
-                }
-                
-                let exclusions = Set(arrayLiteral: "download", "part")
-                if exclusions.contains(fileExt) {
-                    continue
-                }
-                
                 let organisedFiles = fileManager.organiseDirectoryAtPath(path, withExtension: fileExt)
                 outputFilePaths.unionInPlace(organisedFiles)
             }
