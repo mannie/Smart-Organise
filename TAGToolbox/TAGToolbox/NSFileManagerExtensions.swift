@@ -13,8 +13,8 @@ public extension NSFileManager {
     private func exportablePathFromPath(path: String, relativeTo relativePath: String) -> String {
         return relativePath == "." ? path : relativePath.stringByAppendingPathComponent(path)
     }
-    
-    func organiseFilesAtPath(path: String, withExtension fileExt: String) -> Set<String> {
+
+    func organiseDirectoryAtPath(path: String, withExtension fileExt: String) -> Set<String> {
         var outputFilePaths = Set<String>()
         
         var isDirectory = ObjCBool(false)
@@ -22,7 +22,7 @@ public extension NSFileManager {
             return outputFilePaths
         }
         
-        let lastCurrectDirectoryPath = currentDirectoryPath
+        let lastCurrentDirectoryPath = currentDirectoryPath
         
         changeCurrentDirectoryPath(path)
         createDirectoryAtPath(fileExt, withIntermediateDirectories: true, attributes: nil, error: nil)
@@ -40,7 +40,7 @@ public extension NSFileManager {
             }
         }
         
-        changeCurrentDirectoryPath(lastCurrectDirectoryPath)
+        changeCurrentDirectoryPath(lastCurrentDirectoryPath)
         
         return outputFilePaths
     }

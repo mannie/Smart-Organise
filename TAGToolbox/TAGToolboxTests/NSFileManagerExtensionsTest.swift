@@ -90,12 +90,12 @@ class NSFileManagerExtensionsTest: XCTestCase {
     }
     
     func testOrganiseFilesAtPathWithExtension() {
-        XCTAssertEqual(fileManager.organiseFilesAtPath(".", withExtension: "someRandomFakeExt"), Set())
-        XCTAssertEqual(fileManager.organiseFilesAtPath("File 1", withExtension: "someRandomFakeExt"), Set())
-        XCTAssertEqual(fileManager.organiseFilesAtPath("In Folder", withExtension: "someRandomFakeExt"), Set())
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "someRandomFakeExt"), Set())
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("File 1", withExtension: "someRandomFakeExt"), Set())
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "someRandomFakeExt"), Set())
         
-        XCTAssertEqual(fileManager.organiseFilesAtPath("File 1", withExtension: "ext"), Set())
-        XCTAssertEqual(fileManager.organiseFilesAtPath("Some Random Fake Folder", withExtension: "ext"), Set())
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("File 1", withExtension: "ext"), Set())
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("Some Random Fake Folder", withExtension: "ext"), Set())
         
         let dsStores = [ ".DS_Store", "In Folder/.DS_Store" ]
 
@@ -103,9 +103,9 @@ class NSFileManagerExtensionsTest: XCTestCase {
         let level0Ext = [ "ext/File 3.ext", "ext/File 4.ext", "ext/File 5.ext" ]
         let level0Ext2 = [ "ext2/File 5.ext2", "ext2/File 6.ext2", "ext2/File 7.ext2" ]
         
-        XCTAssertEqual(fileManager.organiseFilesAtPath(".", withExtension: "").subtract(dsStores), Set(level0NoExt))
-        XCTAssertEqual(fileManager.organiseFilesAtPath(".", withExtension: "ext").subtract(dsStores), Set(level0Ext))
-        XCTAssertEqual(fileManager.organiseFilesAtPath(".", withExtension: "ext2").subtract(dsStores), Set(level0Ext2))
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "").subtract(dsStores), Set(level0NoExt))
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "ext").subtract(dsStores), Set(level0Ext))
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "ext2").subtract(dsStores), Set(level0Ext2))
      
         let mapper = { "In Folder".stringByAppendingPathComponent($0) }
         
@@ -113,9 +113,9 @@ class NSFileManagerExtensionsTest: XCTestCase {
         let level1Ext: [String] = level0Ext.map(mapper)
         let level1Ext2: [String] = level0Ext2.map(mapper)
 
-        XCTAssertEqual(fileManager.organiseFilesAtPath("In Folder", withExtension: "").subtract(dsStores), Set(level1NoExt).subtract(["In Folder/In Folder"]))
-        XCTAssertEqual(fileManager.organiseFilesAtPath("In Folder", withExtension: "ext").subtract(dsStores), Set(level1Ext))
-        XCTAssertEqual(fileManager.organiseFilesAtPath("In Folder", withExtension: "ext2").subtract(dsStores), Set(level1Ext2))
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "").subtract(dsStores), Set(level1NoExt).subtract(["In Folder/In Folder"]))
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "ext").subtract(dsStores), Set(level1Ext))
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "ext2").subtract(dsStores), Set(level1Ext2))
     }
 
 }

@@ -28,7 +28,7 @@ class OrganiseSimilarFiles: AMBundleAction {
             }
             
             let parentDirectory = sourcePath.stringByDeletingLastPathComponent
-            let organisedFiles = fileManager.organiseFilesAtPath(parentDirectory, withExtension: fileExt)
+            let organisedFiles = fileManager.organiseDirectoryAtPath(parentDirectory, withExtension: fileExt)
             outputFilePaths.unionInPlace(organisedFiles)
         }
         
