@@ -14,6 +14,32 @@ public extension NSFileManager {
         return relativePath == "." ? path : relativePath.stringByAppendingPathComponent(path)
     }
 
+    func organiseItemAtPath(path: String, withDate date: NSDate) -> String? {
+        var outputFilePath: String? = nil
+
+        if !fileExistsAtPath(path) {
+            return outputFilePath
+        }
+        
+        let parentDirectory = path.stringByDeletingLastPathComponent
+        let dateString = String(date: date, format: "yyyy-MM-dd")
+        
+        var destinationPath = parentDirectory.stringByAppendingPathComponent(dateString)
+        
+        createDirectoryAtPath(destinationPath, withIntermediateDirectories: true, attributes: nil, error: nil)
+        
+        if path != "." {
+            destinationPath = destinationPath.stringByAppendingPathComponent(path.lastPathComponent)
+        }
+        destinationPath = collisionSafePath(destinationPath)
+        
+        if moveItemAtPath(path, toPath: destinationPath, error: nil) {
+            outputFilePath = destinationPath
+        }
+        
+        return outputFilePath
+    }
+
     func organiseDirectoryAtPath(path: String, withExtension fileExt: String) -> Set<String> {
         var outputFilePaths = Set<String>()
         

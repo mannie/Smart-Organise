@@ -89,11 +89,13 @@ class NSFileManagerExtensionsTest: XCTestCase {
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "ext", depth: 2), fileManager.subpathsAtPath(".", withExtension: "ext", depth: 1))
     }
     
-    func testOrganiseFilesAtPathWithExtension() {
+    func testOrganiseDirectoryAtPathWithExtension() {
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("", withExtension: "someRandomFakeExt"), Set())
         XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "someRandomFakeExt"), Set())
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("File 1", withExtension: "someRandomFakeExt"), Set())
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "someRandomFakeExt"), Set())
         
+        XCTAssertEqual(fileManager.organiseDirectoryAtPath("", withExtension: "ext"), Set())
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("File 1", withExtension: "ext"), Set())
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("Some Random Fake Folder", withExtension: "ext"), Set())
         
@@ -116,6 +118,19 @@ class NSFileManagerExtensionsTest: XCTestCase {
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "").subtract(dsStores), Set(level1NoExt).subtract(["In Folder/In Folder"]))
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "ext").subtract(dsStores), Set(level1Ext))
         XCTAssertEqual(fileManager.organiseDirectoryAtPath("In Folder", withExtension: "ext2").subtract(dsStores), Set(level1Ext2))
+    }
+
+    func testOrganiseItemAtPathWithDate() {
+        let date = NSDate()
+        
+        XCTAssertNil(fileManager.organiseItemAtPath("", withDate: date))
+        XCTAssertNil(fileManager.organiseItemAtPath("File That Doesn't Exist", withDate: date))
+        
+        XCTAssertEqual(fileManager.organiseItemAtPath(".", withDate: date)!, "2015-06-15")
+        XCTAssertEqual(fileManager.organiseItemAtPath("File 1", withDate: date)!, "2015-06-15/File 1")
+        XCTAssertEqual(fileManager.organiseItemAtPath("File 3.ext", withDate: date)!, "2015-06-15/File 3.ext")
+        XCTAssertEqual(fileManager.organiseItemAtPath("In Folder", withDate: date)!, "2015-06-15/In Folder")
+        XCTAssertEqual(fileManager.organiseItemAtPath("In Folder/File 6.ext2", withDate: date)!, "In Folder/2015-06-15/File 6.ext2")
     }
 
 }

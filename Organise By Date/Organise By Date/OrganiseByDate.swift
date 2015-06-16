@@ -15,25 +15,13 @@ class OrganiseByDate: AMBundleAction {
         let inputFilePaths = Set<String>(input as! Array<String>)
         var outputFilePaths = Set<String>()
         
-        let dateString = String(date: NSDate(), format: "yyyy-MM-dd")
+        let date = NSDate()
         
         let fileManager = NSFileManager.defaultManager()
         
         for sourcePath in inputFilePaths {
-            if !fileManager.fileExistsAtPath(sourcePath) {
-                continue
-            }
-            
-            let parentDirectory = sourcePath.stringByDeletingLastPathComponent
-            var destinationPath = parentDirectory.stringByAppendingPathComponent(dateString)
-            
-            fileManager.createDirectoryAtPath(destinationPath, withIntermediateDirectories: true, attributes: nil, error: nil)
-            
-            destinationPath = destinationPath.stringByAppendingPathComponent(sourcePath.lastPathComponent)
-            destinationPath = fileManager.collisionSafePath(destinationPath)
-            
-            if fileManager.moveItemAtPath(sourcePath, toPath: destinationPath, error: nil) {
-                outputFilePaths.insert(destinationPath)
+            if let organisedItem = fileManager.organiseItemAtPath(sourcePath, withDate: date) {
+                outputFilePaths.insert(organisedItem)
             }
         }
         
