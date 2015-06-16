@@ -77,7 +77,7 @@ public extension NSFileManager {
         return outputFilePaths
     }
 
-    func collisionSafePath(path: String) -> String {
+    internal func collisionSafePath(path: String) -> String {
         if path.isEmpty {
             return path
         }
@@ -114,7 +114,7 @@ public extension NSFileManager {
         return uniquePath
     }
     
-    func subpathsAtPath(path: String, withExtension fileExt: String, depth: Int=0) -> Set<String> {
+    internal func subpathsAtPath(path: String, withExtension fileExt: String, depth: Int=0) -> Set<String> {
         assert(!path.isEmpty, "Path cannot be empty")
 
         if !fileExistsAtPath(path) {
