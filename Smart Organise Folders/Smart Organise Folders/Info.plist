@@ -7,20 +7,20 @@
 		<key>Container</key>
 		<string>List</string>
 		<key>Optional</key>
-		<true/>
+		<false/>
 		<key>Types</key>
 		<array>
 			<string>com.apple.cocoa.path</string>
 		</array>
 	</dict>
 	<key>AMApplication</key>
-	<string>(* Primary Application used by this action goes here. *)</string>
+	<string>Finder</string>
 	<key>AMCanShowSelectedItemsWhenRun</key>
 	<false/>
 	<key>AMCanShowWhenRun</key>
 	<true/>
 	<key>AMCategory</key>
-	<string>(* Category of this action goes here. *)</string>
+	<string>AMCategoryFilesAndFolders</string>
 	<key>AMDefaultParameters</key>
 	<dict/>
 	<key>AMDescription</key>
@@ -34,7 +34,7 @@
 		<key>AMDOptions</key>
 		<string>(* AMDOptions text to further explain configuration options in the UI goes here. (optional) *)</string>
 		<key>AMDRelatedActions</key>
-		<string>(* AMDRelatedActions bundle ids go here. (optional) *)</string>
+		<string>(com.etagarira.Organise-By-Date, com.etagarira.Organise-By-Extension)</string>
 		<key>AMDRequires</key>
 		<string>(* AMDRequires text to explain anything outside of Automator required for the action's operation, e.g. a web page open in Safari, goes here. (optional) *)</string>
 		<key>AMDResult</key>
@@ -44,8 +44,6 @@
 		<key>AMDWebsite</key>
 		<string>(* AMDWebsite URL to additional information or documentation for the action goes here. (optional) *)</string>
 	</dict>
-	<key>AMIconName</key>
-	<string>(* The name of the icon *)</string>
 	<key>AMKeywords</key>
 	<array/>
 	<key>AMName</key>
@@ -92,7 +90,9 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2009-2015 etagarira. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>Smart_Organise_Folders</string>
+	<string>SmartOrganiseFolders</string>
 </dict>
 </plist>
