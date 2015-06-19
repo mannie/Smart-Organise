@@ -17,8 +17,14 @@ class OrganiseByExtension: AMBundleAction {
         
         let fileManager = NSFileManager.defaultManager()
         for sourcePath in inputFilePaths {
+            let fileExt = sourcePath.pathExtension
+            if fileExt.isEmpty {
+                outputFilePaths.insert(sourcePath)
+                continue
+            }
+
             let parentDirectory = sourcePath.stringByDeletingLastPathComponent
-            let organisedFiles = fileManager.organiseDirectoryAtPath(parentDirectory, withExtension: sourcePath.pathExtension)
+            let organisedFiles = fileManager.organiseDirectoryAtPath(parentDirectory, withExtension: fileExt)
             outputFilePaths.unionInPlace(organisedFiles)
         }
         
