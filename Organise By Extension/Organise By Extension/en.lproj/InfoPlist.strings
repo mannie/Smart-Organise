@@ -4,7 +4,7 @@
 /* AMCategory localized strings */
 /* e.g. "Text" = "Text"; */
 
-AMName = "Organise Similar Files";
+AMName = "Organise By Extension";
 
 /* AMDefaultParameters localized values */
 /* e.g. myDefaultIntegerParameter = 0; */

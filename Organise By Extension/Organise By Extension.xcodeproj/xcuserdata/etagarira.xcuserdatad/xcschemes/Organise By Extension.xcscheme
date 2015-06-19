@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDFD43A01B2EA51D000A61C7"
-               BuildableName = "Organise Similar Files.action"
-               BlueprintName = "Organise Similar Files"
-               ReferencedContainer = "container:Organise Similar Files.xcodeproj">
+               BlueprintIdentifier = "CD2C64831B33B5AE00D2DC71"
+               BuildableName = "Organise By Extension.action"
+               BlueprintName = "Organise By Extension"
+               ReferencedContainer = "container:Organise By Extension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,15 +47,15 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDFD43A01B2EA51D000A61C7"
-            BuildableName = "Organise Similar Files.action"
-            BlueprintName = "Organise Similar Files"
-            ReferencedContainer = "container:Organise Similar Files.xcodeproj">
+            BlueprintIdentifier = "CD2C64831B33B5AE00D2DC71"
+            BuildableName = "Organise By Extension.action"
+            BlueprintName = "Organise By Extension"
+            ReferencedContainer = "container:Organise By Extension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-action &quot;$(BUILD_DIR)/Debug/Organise Similar Files.action&quot;"
+            argument = "-action &quot;$(BUILD_DIR)/Debug/Organise By Extension.action&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -71,10 +71,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDFD43A01B2EA51D000A61C7"
-            BuildableName = "Organise Similar Files.action"
-            BlueprintName = "Organise Similar Files"
-            ReferencedContainer = "container:Organise Similar Files.xcodeproj">
+            BlueprintIdentifier = "CD2C64831B33B5AE00D2DC71"
+            BuildableName = "Organise By Extension.action"
+            BlueprintName = "Organise By Extension"
+            ReferencedContainer = "container:Organise By Extension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

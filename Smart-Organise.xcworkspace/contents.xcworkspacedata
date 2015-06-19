@@ -17,7 +17,7 @@
       location = "group:Organise By Date/Organise By Date.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Organise Similar Files/Organise Similar Files.xcodeproj">
+      location = "group:Organise By Extension/Organise By Extension.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Smart Organise Folders/Smart Organise Folders.xcodeproj">

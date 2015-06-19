@@ -20,7 +20,7 @@
 	<key>AMCanShowWhenRun</key>
 	<true/>
 	<key>AMCategory</key>
-	<string>(* Category of this action goes here. *)</string>
+	<string>AMCategoryFilesAndFolders</string>
 	<key>AMDefaultParameters</key>
 	<dict/>
 	<key>AMDescription</key>
@@ -49,7 +49,7 @@
 	<key>AMKeywords</key>
 	<array/>
 	<key>AMName</key>
-	<string>Organise Similar Files</string>
+	<string>Organise By Extension</string>
 	<key>AMProvides</key>
 	<dict>
 		<key>Container</key>
@@ -92,7 +92,9 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2015 etagarira. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>Organise_Similar_Files</string>
+	<string>OrganiseByExtension</string>
 </dict>
 </plist>
