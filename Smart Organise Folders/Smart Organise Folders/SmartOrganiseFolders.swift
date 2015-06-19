@@ -2,8 +2,8 @@
 //  SmartOrganiseFolders.swift
 //  SmartOrganiseFolders
 //
-//  Created by etagarira on 10/06/2015.
-//
+//  Created by Mannie Tagarira on 10/06/2015.
+//  Copyright (c) 2015 Mannie Tagarira. All rights reserved.
 //
 
 import Automator
