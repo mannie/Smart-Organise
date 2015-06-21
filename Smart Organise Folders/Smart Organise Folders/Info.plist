@@ -44,6 +44,8 @@
 		<key>AMDWebsite</key>
 		<string>(* AMDWebsite URL to additional information or documentation for the action goes here. (optional) *)</string>
 	</dict>
+	<key>AMIconName</key>
+	<string>icon.png</string>
 	<key>AMKeywords</key>
 	<array/>
 	<key>AMName</key>
