@@ -27,9 +27,6 @@ public extension AMBundleAction {
         }
         notification.informativeText = informativeText
 
-        let bundle = NSBundle.allBundles().filter { $0.bundleIdentifier!!.hasPrefix("com.etagarira") }.first as! NSBundle
-        notification.contentImage = NSImage(contentsOfFile: bundle.pathForImageResource("icon")!)
-        
         NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
     }
     
