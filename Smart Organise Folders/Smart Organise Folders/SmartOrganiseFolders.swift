@@ -29,8 +29,6 @@ class SmartOrganiseFolders: AMBundleAction {
                 let organisedFiles = fileManager.organiseDirectoryAtPath(path, withExtension: fileExt)
                 outputFilePaths.unionInPlace(organisedFiles)
             }
-            
-            outputFilePaths.insert(path)
         }
         
         deliverUserNotification(Array<String>(outputFilePaths))
