@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2C64A11B365A8100D2DC71 /* AMBundleActionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C64A01B365A8100D2DC71 /* AMBundleActionExtensions.swift */; };
 		CD5605D71B293862004713BC /* TAGToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5605D61B293862004713BC /* TAGToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD5605DD1B293862004713BC /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5605D11B293862004713BC /* TAGToolbox.framework */; };
 		CD56061F1B294678004713BC /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56061E1B294678004713BC /* StringExtensions.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD2C64A01B365A8100D2DC71 /* AMBundleActionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMBundleActionExtensions.swift; sourceTree = "<group>"; };
 		CD5605D11B293862004713BC /* TAGToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAGToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5605D51B293862004713BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5605D61B293862004713BC /* TAGToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGToolbox.h; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				CD5605D61B293862004713BC /* TAGToolbox.h */,
+				CD2C64A01B365A8100D2DC71 /* AMBundleActionExtensions.swift */,
 				CD5606231B294A10004713BC /* NSFileManagerExtensions.swift */,
 				CD56061E1B294678004713BC /* StringExtensions.swift */,
 				CD5605D41B293862004713BC /* Supporting Files */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD5606241B294A10004713BC /* NSFileManagerExtensions.swift in Sources */,
+				CD2C64A11B365A8100D2DC71 /* AMBundleActionExtensions.swift in Sources */,
 				CD56061F1B294678004713BC /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
