@@ -11,18 +11,20 @@
 		CD2C64911B33B5AE00D2DC71 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2C648F1B33B5AE00D2DC71 /* main.xib */; };
 		CD2C64991B33B5FB00D2DC71 /* OrganiseByExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C64981B33B5FB00D2DC71 /* OrganiseByExtension.swift */; };
 		CD2C649E1B33B79800D2DC71 /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2C649D1B33B79800D2DC71 /* TAGToolbox.framework */; };
-		CD2C649F1B33B79C00D2DC71 /* TAGToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD2C649D1B33B79800D2DC71 /* TAGToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD2C649F1B33B79C00D2DC71 /* TAGToolbox.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = CD2C649D1B33B79800D2DC71 /* TAGToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD2C64CA1B367F6A00D2DC71 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD2C64C91B367F6A00D2DC71 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CD2C649A1B33B77100D2DC71 /* CopyFiles */ = {
+		CD2C649A1B33B77100D2DC71 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CD2C649F1B33B79C00D2DC71 /* TAGToolbox.framework in CopyFiles */,
+				CD2C649F1B33B79C00D2DC71 /* TAGToolbox.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -35,6 +37,7 @@
 		CD2C64971B33B5FA00D2DC71 /* Organise By Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Organise By Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD2C64981B33B5FB00D2DC71 /* OrganiseByExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganiseByExtension.swift; sourceTree = "<group>"; };
 		CD2C649D1B33B79800D2DC71 /* TAGToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAGToolbox.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug/TAGToolbox.framework"; sourceTree = "<group>"; };
+		CD2C64C91B367F6A00D2DC71 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 		CD2C647A1B33B5AE00D2DC71 = {
 			isa = PBXGroup;
 			children = (
+				CD2C64C91B367F6A00D2DC71 /* icon.png */,
 				CD2C649D1B33B79800D2DC71 /* TAGToolbox.framework */,
 				CD2C64861B33B5AE00D2DC71 /* Organise By Extension */,
 				CD2C64851B33B5AE00D2DC71 /* Products */,
@@ -96,7 +100,7 @@
 				CD2C647F1B33B5AE00D2DC71 /* Sources */,
 				CD2C64801B33B5AE00D2DC71 /* Frameworks */,
 				CD2C64811B33B5AE00D2DC71 /* Resources */,
-				CD2C649A1B33B77100D2DC71 /* CopyFiles */,
+				CD2C649A1B33B77100D2DC71 /* Copy Files */,
 				CD2C64821B33B5AE00D2DC71 /* ShellScript */,
 			);
 			buildRules = (
@@ -147,6 +151,7 @@
 			files = (
 				CD2C64911B33B5AE00D2DC71 /* main.xib in Resources */,
 				CD2C648B1B33B5AE00D2DC71 /* InfoPlist.strings in Resources */,
+				CD2C64CA1B367F6A00D2DC71 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2C64CE1B36930100D2DC71 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD2C64CD1B36930100D2DC71 /* icon.png */; };
 		CDFD43CC1B2EA7E5000A61C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDFD43CA1B2EA7E5000A61C7 /* InfoPlist.strings */; };
 		CDFD43D21B2EA7E5000A61C7 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFD43D01B2EA7E5000A61C7 /* main.xib */; };
 		CDFD43DA1B2EA80F000A61C7 /* SmartOrganiseFolders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFD43D91B2EA80F000A61C7 /* SmartOrganiseFolders.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD2C64CD1B36930100D2DC71 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		CDFD43C51B2EA7E5000A61C7 /* Smart Organise Folders.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Organise Folders.action"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFD43C91B2EA7E5000A61C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDFD43CB1B2EA7E5000A61C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		CDFD43BB1B2EA7E5000A61C7 = {
 			isa = PBXGroup;
 			children = (
+				CD2C64CD1B36930100D2DC71 /* icon.png */,
 				CDFD43E81B2FFAC0000A61C7 /* TAGToolbox.framework */,
 				CDFD43C71B2EA7E5000A61C7 /* Smart Organise Folders */,
 				CDFD43C61B2EA7E5000A61C7 /* Products */,
@@ -146,6 +149,7 @@
 			files = (
 				CDFD43D21B2EA7E5000A61C7 /* main.xib in Resources */,
 				CDFD43CC1B2EA7E5000A61C7 /* InfoPlist.strings in Resources */,
+				CD2C64CE1B36930100D2DC71 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,6 +28,8 @@ class OrganiseByExtension: AMBundleAction {
             outputFilePaths.unionInPlace(organisedFiles)
         }
         
+        deliverUserNotification(Array<String>(outputFilePaths))
+
         return outputFilePaths
     }
     

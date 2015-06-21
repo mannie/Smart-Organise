@@ -32,6 +32,8 @@ class SmartOrganiseFolders: AMBundleAction {
             outputFilePaths.insert(path)
         }
         
+        deliverUserNotification(Array<String>(outputFilePaths))
+
         return outputFilePaths
     }
 }

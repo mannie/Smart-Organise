@@ -25,6 +25,8 @@ class OrganiseByDate: AMBundleAction {
             }
         }
         
+        deliverUserNotification(Array<String>(outputFilePaths))
+
         return outputFilePaths
     }
     
