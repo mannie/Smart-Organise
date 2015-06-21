@@ -11,6 +11,10 @@ import Automator
 public extension AMBundleAction {
     
     func deliverUserNotification(filePaths: Array<String>) {
+        if filePaths.count == 0 {
+            return
+        }
+        
         let notification = NSUserNotification()
         notification.title = name
         
