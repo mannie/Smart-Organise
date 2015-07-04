@@ -5,10 +5,7 @@
       location = "group:LICENSE">
    </FileRef>
    <FileRef
-      location = "group:ChangeLog.rdoc">
-   </FileRef>
-   <FileRef
-      location = "group:ReadMe.rdoc">
+      location = "group:/Users/etagarira/Projects/Smart-Organise/ReadMe.markdown">
    </FileRef>
    <FileRef
       location = "group:icon.png">
