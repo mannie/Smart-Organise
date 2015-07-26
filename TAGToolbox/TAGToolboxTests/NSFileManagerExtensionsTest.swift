@@ -41,6 +41,11 @@ class NSFileManagerExtensionsTest: XCTestCase {
         performCollisionSafePathTest("File 3", expected: "File 4")
         performCollisionSafePathTest("File 4", shouldExist: false, expected: "File 4")
         
+        performCollisionSafePathTest("101.ext3", expected: "101 1.ext3")
+        performCollisionSafePathTest("102.ext3", expected: "102 1.ext3")
+        performCollisionSafePathTest("103.ext3", expected: "103 3.ext3")
+        performCollisionSafePathTest("104.ext3", shouldExist: false, expected: "104.ext3")
+        
         performCollisionSafePathTest("In Folder/File 1", expected: "In Folder/File 4")
         performCollisionSafePathTest("In Folder/File 2", expected: "In Folder/File 4")
         performCollisionSafePathTest("In Folder/File 3", expected: "In Folder/File 4")
@@ -55,6 +60,11 @@ class NSFileManagerExtensionsTest: XCTestCase {
         performCollisionSafePathTest("In Folder/File 4.ext", expected: "In Folder/File 6.ext")
         performCollisionSafePathTest("In Folder/File 5.ext", expected: "In Folder/File 6.ext")
         performCollisionSafePathTest("In Folder/File 6.ext", shouldExist: false, expected: "In Folder/File 6.ext")
+
+        performCollisionSafePathTest("In Folder/101.ext3", expected: "In Folder/101 1.ext3")
+        performCollisionSafePathTest("In Folder/102.ext3", expected: "In Folder/102 1.ext3")
+        performCollisionSafePathTest("In Folder/103.ext3", expected: "In Folder/103 3.ext3")
+        performCollisionSafePathTest("In Folder/104.ext3", shouldExist: false, expected: "In Folder/104.ext3")
     }
         
     func testSubpathsAtPathWithExtensionDepth() {

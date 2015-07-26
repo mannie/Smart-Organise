@@ -87,7 +87,9 @@ public extension NSFileManager {
         let filename = path.lastPathComponent.stringByDeletingPathExtension
         let fileExt = path.pathExtension
         
-        var trailingNumber = filename.componentsSeparatedByString(" ").last?.toInt()
+        let filenameComponents = filename.componentsSeparatedByString(" ")
+        
+        var trailingNumber = filenameComponents.count <= 1 ? nil : filenameComponents.last?.toInt()
         let endsWithNumber = trailingNumber != nil
         
         var uniquenessModifier = endsWithNumber ? trailingNumber! + 1 : 1
