@@ -127,7 +127,9 @@ class NSFileManagerExtensionsTest: XCTestCase {
     }
 
     func testOrganiseItemAtPathWithDate() {
-        let date = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = dateFormatter.dateFromString("2015-06-15")!
         
         XCTAssertNil(fileManager.organiseItemAtPath("", withDate: date))
         XCTAssertNil(fileManager.organiseItemAtPath("File That Doesn't Exist", withDate: date))
