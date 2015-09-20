@@ -34,7 +34,7 @@
 		<key>AMDOptions</key>
 		<string></string>
 		<key>AMDRelatedActions</key>
-		<string>(com.etagarira.Organise-By-Date, com.etagarira.Organise-By-Extension)</string>
+		<string>(io.mannie.Organise-By-Date, io.mannie.Organise-By-Extension)</string>
 		<key>AMDRequires</key>
 		<string></string>
 		<key>AMDResult</key>
@@ -73,7 +73,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.etagarira.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>io.mannie.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
