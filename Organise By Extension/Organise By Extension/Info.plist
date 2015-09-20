@@ -40,7 +40,7 @@
 		<key>AMDResult</key>
 		<string>The input files in their new location along with any other organised files.</string>
 		<key>AMDSummary</key>
-		<string>Moves each file into a folder with the same name as the extension; parent dirctory relationships are maintained so other files of the same extension in the directory are moved as well.</string>
+		<string>Moves each file into a folder with the same name as the extension; parent directory relationships are maintained so other files of the same extension in the directory are moved as well.</string>
 		<key>AMDWebsite</key>
 		<string>(* AMDWebsite URL to additional information or documentation for the action goes here. (optional) *)</string>
 	</dict>
