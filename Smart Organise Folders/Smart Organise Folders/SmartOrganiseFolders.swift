@@ -11,7 +11,7 @@ import TAGToolbox
 
 class SmartOrganiseFolders: AMBundleAction {
     
-    override func runWithInput(input: AnyObject!, error: NSErrorPointer) -> AnyObject! {
+    override func runWithInput(input: AnyObject?) throws -> AnyObject {
         let inputFilePaths = Set<String>(input as! Array<String>)
         var outputFilePaths = Set<String>()
         
