@@ -146,9 +146,17 @@ public extension NSFileManager {
 extension NSFileManager {
     
     func pathForFixtures(name: String) -> String {
-        let suffix = "Tests".stringByAppendingPathComponent("Fixtures").stringByAppendingPathComponent(name.pathExtension)
-        let subpaths = subpathsAtPath(currentDirectoryPath) as! Array<String>
-        return subpaths.filter { $0.hasSuffix(suffix) }.first!
+        let suffix = ("Fixtures" as NSString).stringByAppendingPathComponent((name as NSString).pathExtension)
+
+        let bundle = NSBundle.allBundles().filter { $0.principalClass == NSClassFromString(name) }.first!
+
+        let lastCurrentDirectoryPath = currentDirectoryPath
+        changeCurrentDirectoryPath(bundle.resourcePath!)
+        let subpaths = subpathsAtPath(currentDirectoryPath)! as Array<String>
+        changeCurrentDirectoryPath(lastCurrentDirectoryPath)
+        
+        let path = subpaths.filter { $0.hasSuffix(suffix) }.first!
+        return (bundle.resourcePath! as NSString).stringByAppendingPathComponent(path)
     }
     
     class func swizzle(selector: Selector, withSelector replacementSelector: Selector) {
