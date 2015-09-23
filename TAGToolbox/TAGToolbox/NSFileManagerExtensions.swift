@@ -41,9 +41,8 @@ public extension NSFileManager {
         }
         destinationPath = collisionSafePath(destinationPath)
         
-        if moveItemAtPath(path, toPath: destinationPath, error: nil) {
-            outputFilePath = destinationPath
-        }
+        try! moveItemAtPath(path, toPath: destinationPath)
+        outputFilePath = destinationPath
         
         return outputFilePath
     }
@@ -76,9 +75,8 @@ public extension NSFileManager {
 
             createDirectoryAtPath(fileExt)
             
-            if moveItemAtPath(sourcePath, toPath: destinationPath, error: nil) {
-                outputFilePaths.insert(exportablePathFromPath(destinationPath, relativeTo: path))
-            }
+            try! moveItemAtPath(sourcePath, toPath: destinationPath)
+            outputFilePaths.insert(exportablePathFromPath(destinationPath, relativeTo: path))
         }
         
         changeCurrentDirectoryPath(lastCurrentDirectoryPath)
