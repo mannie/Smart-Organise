@@ -117,6 +117,8 @@
 		CDFD43BC1B2EA7E5000A61C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				TargetAttributes = {
 					CDFD43C41B2EA7E5000A61C7 = {
