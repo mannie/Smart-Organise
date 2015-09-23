@@ -133,7 +133,8 @@ public extension NSFileManager {
         let maxCountOfPathComponents = depth + 1
 
         let filteredSubpaths = subpathsAtPath(path)?.filter {
-            $0.pathComponents.count <= maxCountOfPathComponents && $0.pathExtension == fileExt
+            let subpath = $0 as NSString
+            return subpath.pathComponents.count <= maxCountOfPathComponents && subpath.pathExtension == fileExt
         }
     
         return Set<String>(filteredSubpaths as! Array<String>)
