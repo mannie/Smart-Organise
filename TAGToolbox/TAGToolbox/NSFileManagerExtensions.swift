@@ -154,8 +154,8 @@ extension NSFileManager {
     class func swizzle(selector: Selector, withSelector replacementSelector: Selector) {
         let targetClass: AnyClass = object_getClass(NSFileManager())
         
-        var originalMethod = class_getInstanceMethod(targetClass, selector)
-        var replacementMethod = class_getInstanceMethod(targetClass, replacementSelector)
+        let originalMethod = class_getInstanceMethod(targetClass, selector)
+        let replacementMethod = class_getInstanceMethod(targetClass, replacementSelector)
 
         assert(originalMethod != nil && replacementMethod != nil)
         method_exchangeImplementations(originalMethod, replacementMethod)
