@@ -29,15 +29,14 @@ public extension NSFileManager {
             return outputFilePath
         }
         
-        let parentDirectory = path.stringByDeletingLastPathComponent
+        let parentDirectory: NSString = (path as NSString).stringByDeletingLastPathComponent
         let dateString = String(date: date, format: "yyyy-MM-dd")
         
         var destinationPath = parentDirectory.stringByAppendingPathComponent(dateString)
-        
         createDirectoryAtPath(destinationPath)
         
         if path != "." {
-            destinationPath = destinationPath.stringByAppendingPathComponent(path.lastPathComponent)
+            destinationPath = (destinationPath as NSString).stringByAppendingPathComponent((path as NSString).lastPathComponent)
         }
         destinationPath = collisionSafePath(destinationPath)
         
