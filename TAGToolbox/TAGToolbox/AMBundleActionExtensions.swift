@@ -18,7 +18,7 @@ public extension AMBundleAction {
         let notification = NSUserNotification()
         notification.title = name
         
-        let fileExts = filePaths.map { $0.pathExtension }
+        let fileExts = filePaths.map { ($0 as NSString).pathExtension }
         let uniqueFileExts = Set(fileExts).subtract(Set(arrayLiteral: ""))
         
         var informativeText = "\(filePaths.count) item" + (filePaths.count == 1 ? "" : "s")

@@ -11,7 +11,7 @@ import Foundation
 public extension NSFileManager {
     
     private func exportablePathFromPath(path: String, relativeTo relativePath: String) -> String {
-        return relativePath == "." ? path : relativePath.stringByAppendingPathComponent(path)
+        return relativePath == "." ? path : (relativePath as NSString).stringByAppendingPathComponent(path)
     }
     
     private func createDirectoryAtPath(path: String) {
@@ -71,7 +71,7 @@ public extension NSFileManager {
                 continue
             }
 
-            let destinationPath = collisionSafePath(fileExt.stringByAppendingPathComponent(sourcePath))
+            let destinationPath = collisionSafePath((fileExt as NSString).stringByAppendingPathComponent(sourcePath))
 
             createDirectoryAtPath(fileExt)
             

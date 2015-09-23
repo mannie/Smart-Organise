@@ -87,7 +87,7 @@ class NSFileManagerExtensionsTest: XCTestCase {
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "", depth: 0).subtract(dsStores), Set(level0NoExt))
         XCTAssertEqual(fileManager.subpathsAtPath(".", withExtension: "ext", depth: 0), Set(level0WithExt))
         
-        let mapper = { "In Folder".stringByAppendingPathComponent($0) }
+        let mapper = { ("In Folder" as NSString).stringByAppendingPathComponent($0) }
 
         let level1NoExt: [String] = level0NoExt.map(mapper) + level0NoExt
         let level1WithExt: [String] = level0WithExt.map(mapper) + level0WithExt
@@ -125,7 +125,7 @@ class NSFileManagerExtensionsTest: XCTestCase {
         XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "ext").subtract(dsStores), Set(level0Ext))
         XCTAssertEqual(fileManager.organiseDirectoryAtPath(".", withExtension: "ext2").subtract(dsStores), Set(level0Ext2))
      
-        let mapper = { "In Folder".stringByAppendingPathComponent($0) }
+        let mapper = { ("In Folder" as NSString).stringByAppendingPathComponent($0) }
         
         let level1NoExt: [String] = level0NoExt.map(mapper)
         let level1Ext: [String] = level0Ext.map(mapper)
