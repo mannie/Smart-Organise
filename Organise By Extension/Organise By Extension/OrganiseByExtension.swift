@@ -16,10 +16,10 @@ class OrganiseByExtension: AMBundleAction {
         var outputFilePaths = Set<String>()
         
         let fileManager = NSFileManager.defaultManager()
-        for sourcePath in inputFilePaths {
+        for sourcePath: NSString in inputFilePaths {
             let fileExt = sourcePath.pathExtension
             if fileExt.isEmpty {
-                outputFilePaths.insert(sourcePath)
+                outputFilePaths.insert(sourcePath as String)
                 continue
             }
 
