@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,29 +15,32 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD2C64831B33B5AE00D2DC71"
-               BuildableName = "Organise By Extension.action"
-               BlueprintName = "Organise By Extension"
+               BuildableName = "Organise Files with Extension.action"
+               BlueprintName = "Organise Files with Extension"
                ReferencedContainer = "container:Organise By Extension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
@@ -48,14 +51,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD2C64831B33B5AE00D2DC71"
-            BuildableName = "Organise By Extension.action"
-            BlueprintName = "Organise By Extension"
+            BuildableName = "Organise Files with Extension.action"
+            BlueprintName = "Organise Files with Extension"
             ReferencedContainer = "container:Organise By Extension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-action &quot;$(BUILD_DIR)/Debug/Organise By Extension.action&quot;"
+            argument = "-action &quot;$(BUILD_DIR)/Debug/Organise Files with Extension.action&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -63,17 +66,17 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD2C64831B33B5AE00D2DC71"
-            BuildableName = "Organise By Extension.action"
-            BlueprintName = "Organise By Extension"
+            BuildableName = "Organise Files with Extension.action"
+            BlueprintName = "Organise Files with Extension"
             ReferencedContainer = "container:Organise By Extension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

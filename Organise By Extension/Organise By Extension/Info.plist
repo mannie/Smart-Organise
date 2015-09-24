@@ -49,7 +49,7 @@
 	<key>AMKeywords</key>
 	<array/>
 	<key>AMName</key>
-	<string>Organise By Extension</string>
+	<string>Organise Files with Extension</string>
 	<key>AMProvides</key>
 	<dict>
 		<key>Container</key>
