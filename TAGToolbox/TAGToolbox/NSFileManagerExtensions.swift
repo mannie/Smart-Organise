@@ -88,24 +88,31 @@ public extension NSFileManager {
             return path
         }
         
-        let parentDir = path.stringByDeletingLastPathComponent
+        let _path = path as NSString
         
-        let filename = path.lastPathComponent.stringByDeletingPathExtension
-        let fileExt = path.pathExtension
+        let parentDir: NSString = _path.stringByDeletingLastPathComponent
+        
+        let filename = (_path.lastPathComponent as NSString).stringByDeletingPathExtension
+        let fileExt = _path.pathExtension
         
         let filenameComponents = filename.componentsSeparatedByString(" ")
         
-        var trailingNumber = filenameComponents.count <= 1 ? nil : filenameComponents.last?.toInt()
+        var trailingNumber = filenameComponents.count <= 1 ? nil : Int(filenameComponents.last!)
         let endsWithNumber = trailingNumber != nil
         
         var uniquenessModifier = endsWithNumber ? trailingNumber! + 1 : 1
         var uniquePath = path
-        var uniqueName = path.lastPathComponent
+        var uniqueName: NSString = _path.lastPathComponent
         
         while fileExistsAtPath(uniquePath) {
             if endsWithNumber {
                 uniqueName = uniqueName.stringByDeletingPathExtension
-                uniqueName = uniqueName.stringByReplacingOccurrencesOfString(" \(trailingNumber!)", withString: " \(uniquenessModifier)", options: .BackwardsSearch, range: nil)
+                
+                uniqueName = uniqueName.stringByReplacingOccurrencesOfString(" \(trailingNumber!)",
+                    withString: " \(uniquenessModifier)",
+                    options: .BackwardsSearch,
+                    range: NSRange(location: 0, length: uniqueName.length))
+                
                 trailingNumber = uniquenessModifier as Int?
             } else {
                 uniqueName = "\(filename) \(uniquenessModifier)"
@@ -113,10 +120,10 @@ public extension NSFileManager {
             uniquenessModifier++
             
             if !fileExt.isEmpty {
-                uniqueName = uniqueName.stringByAppendingPathExtension(fileExt)!
+                uniqueName = (uniqueName as NSString).stringByAppendingPathExtension(fileExt)!
             }
             
-            uniquePath = parentDir.stringByAppendingPathComponent(uniqueName)
+            uniquePath = parentDir.stringByAppendingPathComponent(uniqueName as String)
         }
     
         return uniquePath
