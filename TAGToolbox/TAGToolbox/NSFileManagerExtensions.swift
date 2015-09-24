@@ -143,7 +143,7 @@ public extension NSFileManager {
             return subpath.pathComponents.count <= maxCountOfPathComponents && subpath.pathExtension == fileExt
         }
     
-        return Set<String>(filteredSubpaths as! Array<String>)
+        return Set<String>(filteredSubpaths! as Array<String>)
     }
     
 }
