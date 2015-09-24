@@ -149,6 +149,12 @@ class NSFileManagerExtensionsTest: XCTestCase {
         XCTAssertEqual(fileManager.organiseItemAtPath("File 3.ext", withDate: date)!, "2015-06-15/File 3.ext")
         XCTAssertEqual(fileManager.organiseItemAtPath("In Folder", withDate: date)!, "2015-06-15/In Folder")
         XCTAssertEqual(fileManager.organiseItemAtPath("In Folder/File 6.ext2", withDate: date)!, "In Folder/2015-06-15/File 6.ext2")
+        
+        XCTAssertEqual(fileManager.organiseItemAtPath("Ignore.download", withDate: date), "Ignore.download")
+        XCTAssertEqual(fileManager.organiseItemAtPath("Ignore.ext.part", withDate: date), "Ignore.ext.part")
+        
+        XCTAssertEqual(fileManager.organiseItemAtPath("In Folder/Ignore.download", withDate: date), "In Folder/Ignore.download")
+        XCTAssertEqual(fileManager.organiseItemAtPath("In Folder/Ignore.ext.part", withDate: date), "In Folder/Ignore.ext.part")
     }
 
 }

@@ -10,6 +10,12 @@ import Foundation
 
 public extension NSFileManager {
     
+    private func shouldExcludeFileAtPath(path: String) -> Bool {
+        // TODO: allow for some override control
+        let fileExtensionExclusions = Set(arrayLiteral: "download", "part")
+        return fileExtensionExclusions.contains((path as NSString).pathExtension);
+    }
+    
     private func exportablePathFromPath(path: String, relativeTo relativePath: String) -> String {
         return relativePath == "." ? path : (relativePath as NSString).stringByAppendingPathComponent(path)
     }
@@ -29,6 +35,11 @@ public extension NSFileManager {
             return outputFilePath
         }
         
+        if shouldExcludeFileAtPath(path) {
+            outputFilePath = path
+            return outputFilePath
+        }
+
         let parentDirectory: NSString = (path as NSString).stringByDeletingLastPathComponent
         let dateString = String(date: date, format: "yyyy-MM-dd")
         
@@ -63,9 +74,7 @@ public extension NSFileManager {
                 continue
             }
             
-            // TODO: allow for some override control
-            let exclusions = Set(arrayLiteral: "download", "part")
-            if exclusions.contains(fileExt) {
+            if shouldExcludeFileAtPath(sourcePath) {
                 outputFilePaths.insert(exportablePathFromPath(sourcePath, relativeTo: path))
                 continue
             }
