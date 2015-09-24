@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CD2C64CC1B3692E600D2DC71 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD2C64CB1B3692E600D2DC71 /* icon.png */; };
-		CDB5DD0D1B4855DD00FBECC3 /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB5DD0C1B4855DD00FBECC3 /* TAGToolbox.framework */; };
-		CDB5DD0E1B4855E600FBECC3 /* TAGToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDB5DD0C1B4855DD00FBECC3 /* TAGToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD4E061F1BB3822600272BDB /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4E061E1BB3822600272BDB /* TAGToolbox.framework */; };
+		CD4E06201BB3822800272BDB /* TAGToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD4E061E1BB3822600272BDB /* TAGToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDFD43811B2EA288000A61C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDFD437F1B2EA288000A61C7 /* InfoPlist.strings */; };
 		CDFD43871B2EA288000A61C7 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFD43851B2EA288000A61C7 /* main.xib */; };
 		CDFD438F1B2EA2E7000A61C7 /* OrganiseByDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFD438E1B2EA2E7000A61C7 /* OrganiseByDate.swift */; };
@@ -22,7 +22,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDB5DD0E1B4855E600FBECC3 /* TAGToolbox.framework in CopyFiles */,
+				CD4E06201BB3822800272BDB /* TAGToolbox.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,8 +30,8 @@
 
 /* Begin PBXFileReference section */
 		CD2C64CB1B3692E600D2DC71 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
-		CDB5DD0C1B4855DD00FBECC3 /* TAGToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAGToolbox.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Release/TAGToolbox.framework"; sourceTree = "<group>"; };
-		CDFD437A1B2EA288000A61C7 /* Organise By Date.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Organise By Date.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4E061E1BB3822600272BDB /* TAGToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAGToolbox.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug/TAGToolbox.framework"; sourceTree = "<group>"; };
+		CDFD437A1B2EA288000A61C7 /* Organise Items by Date.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Organise Items by Date.action"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFD437E1B2EA288000A61C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDFD43801B2EA288000A61C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDFD43861B2EA288000A61C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB5DD0D1B4855DD00FBECC3 /* TAGToolbox.framework in Frameworks */,
+				CD4E061F1BB3822600272BDB /* TAGToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +54,7 @@
 		CDFD43701B2EA288000A61C7 = {
 			isa = PBXGroup;
 			children = (
-				CDB5DD0C1B4855DD00FBECC3 /* TAGToolbox.framework */,
+				CD4E061E1BB3822600272BDB /* TAGToolbox.framework */,
 				CD2C64CB1B3692E600D2DC71 /* icon.png */,
 				CDFD437C1B2EA288000A61C7 /* Organise By Date */,
 				CDFD437B1B2EA288000A61C7 /* Products */,
@@ -64,7 +64,7 @@
 		CDFD437B1B2EA288000A61C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDFD437A1B2EA288000A61C7 /* Organise By Date.action */,
+				CDFD437A1B2EA288000A61C7 /* Organise Items by Date.action */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CDFD43791B2EA288000A61C7 /* Organise By Date */ = {
+		CDFD43791B2EA288000A61C7 /* Organise Items by Date */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDFD438A1B2EA288000A61C7 /* Build configuration list for PBXNativeTarget "Organise By Date" */;
+			buildConfigurationList = CDFD438A1B2EA288000A61C7 /* Build configuration list for PBXNativeTarget "Organise Items by Date" */;
 			buildPhases = (
 				CDFD43751B2EA288000A61C7 /* Sources */,
 				CDFD43761B2EA288000A61C7 /* Frameworks */,
@@ -106,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = "Organise By Date";
+			name = "Organise Items by Date";
 			productName = "Organise By Date";
-			productReference = CDFD437A1B2EA288000A61C7 /* Organise By Date.action */;
+			productReference = CDFD437A1B2EA288000A61C7 /* Organise Items by Date.action */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					CDFD43791B2EA288000A61C7 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -139,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CDFD43791B2EA288000A61C7 /* Organise By Date */,
+				CDFD43791B2EA288000A61C7 /* Organise Items by Date */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +224,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -287,17 +288,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/etagarira/Projects/Smart-Organise/TAGToolbox/build/Debug",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Release",
-					"/Users/etagarira/Projects/Smart-Organise/TAGToolbox/build/Release",
-				);
 				INFOPLIST_FILE = "Organise By Date/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mannie.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Organise By Date/Organise By Date-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -311,17 +306,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/etagarira/Projects/Smart-Organise/TAGToolbox/build/Debug",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Release",
-					"/Users/etagarira/Projects/Smart-Organise/TAGToolbox/build/Release",
-				);
 				INFOPLIST_FILE = "Organise By Date/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mannie.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Organise By Date/Organise By Date-Bridging-Header.h";
 				WRAPPER_EXTENSION = action;
@@ -340,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDFD438A1B2EA288000A61C7 /* Build configuration list for PBXNativeTarget "Organise By Date" */ = {
+		CDFD438A1B2EA288000A61C7 /* Build configuration list for PBXNativeTarget "Organise Items by Date" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDFD438B1B2EA288000A61C7 /* Debug */,
