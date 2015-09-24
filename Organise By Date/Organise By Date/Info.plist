@@ -42,7 +42,7 @@
 		<key>AMDSummary</key>
 		<string>Creates a folder with the current date, and moves the selected files into the folder; a new folder is created for each unique parent directory.</string>
 		<key>AMDWebsite</key>
-		<string>(* AMDWebsite URL to additional information or documentation for the action goes here. (optional) *)</string>
+		<string>htttp://mannie.io</string>
 	</dict>
 	<key>AMIconName</key>
 	<string>icon.png</string>

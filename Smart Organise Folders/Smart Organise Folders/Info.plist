@@ -42,7 +42,7 @@
 		<key>AMDSummary</key>
 		<string>Organise each folder such that each file in the folder is moved to a subfolder with a name matching its extension.</string>
 		<key>AMDWebsite</key>
-		<string>(* AMDWebsite URL to additional information or documentation for the action goes here. (optional) *)</string>
+		<string>htttp://mannie.io</string>
 	</dict>
 	<key>AMIconName</key>
 	<string>icon.png</string>
