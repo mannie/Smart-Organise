@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CD2C64CE1B36930100D2DC71 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD2C64CD1B36930100D2DC71 /* icon.png */; };
-		CDB5DD131B48562800FBECC3 /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB5DD121B48562800FBECC3 /* TAGToolbox.framework */; };
-		CDB5DD141B48563100FBECC3 /* TAGToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDB5DD121B48562800FBECC3 /* TAGToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD4E06181BB37F3500272BDB /* TAGToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD4E06151BB37DBB00272BDB /* TAGToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD4E061A1BB37F5E00272BDB /* TAGToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4E06151BB37DBB00272BDB /* TAGToolbox.framework */; };
 		CDFD43CC1B2EA7E5000A61C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDFD43CA1B2EA7E5000A61C7 /* InfoPlist.strings */; };
 		CDFD43D21B2EA7E5000A61C7 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFD43D01B2EA7E5000A61C7 /* main.xib */; };
 		CDFD43DA1B2EA80F000A61C7 /* SmartOrganiseFolders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFD43D91B2EA80F000A61C7 /* SmartOrganiseFolders.swift */; };
@@ -22,7 +22,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDB5DD141B48563100FBECC3 /* TAGToolbox.framework in CopyFiles */,
+				CD4E06181BB37F3500272BDB /* TAGToolbox.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,8 +30,8 @@
 
 /* Begin PBXFileReference section */
 		CD2C64CD1B36930100D2DC71 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
-		CDB5DD121B48562800FBECC3 /* TAGToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAGToolbox.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Release/TAGToolbox.framework"; sourceTree = "<group>"; };
-		CDFD43C51B2EA7E5000A61C7 /* Smart Organise Folders.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Organise Folders.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4E06151BB37DBB00272BDB /* TAGToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAGToolbox.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smart-Organise-gfqexwrtokzrapggsxbsaptvzwqa/Build/Products/Debug/TAGToolbox.framework"; sourceTree = "<group>"; };
+		CDFD43C51B2EA7E5000A61C7 /* Organise Folders by Extension.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Organise Folders by Extension.action"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFD43C91B2EA7E5000A61C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDFD43CB1B2EA7E5000A61C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDFD43D11B2EA7E5000A61C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB5DD131B48562800FBECC3 /* TAGToolbox.framework in Frameworks */,
+				CD4E061A1BB37F5E00272BDB /* TAGToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +54,7 @@
 		CDFD43BB1B2EA7E5000A61C7 = {
 			isa = PBXGroup;
 			children = (
-				CDB5DD121B48562800FBECC3 /* TAGToolbox.framework */,
+				CD4E06151BB37DBB00272BDB /* TAGToolbox.framework */,
 				CD2C64CD1B36930100D2DC71 /* icon.png */,
 				CDFD43C71B2EA7E5000A61C7 /* Smart Organise Folders */,
 				CDFD43C61B2EA7E5000A61C7 /* Products */,
@@ -64,7 +64,7 @@
 		CDFD43C61B2EA7E5000A61C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDFD43C51B2EA7E5000A61C7 /* Smart Organise Folders.action */,
+				CDFD43C51B2EA7E5000A61C7 /* Organise Folders by Extension.action */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CDFD43C41B2EA7E5000A61C7 /* Smart Organise Folders */ = {
+		CDFD43C41B2EA7E5000A61C7 /* Organise Folders by Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDFD43D51B2EA7E5000A61C7 /* Build configuration list for PBXNativeTarget "Smart Organise Folders" */;
+			buildConfigurationList = CDFD43D51B2EA7E5000A61C7 /* Build configuration list for PBXNativeTarget "Organise Folders by Extension" */;
 			buildPhases = (
 				CDFD43C01B2EA7E5000A61C7 /* Sources */,
 				CDFD43C11B2EA7E5000A61C7 /* Frameworks */,
@@ -106,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = "Smart Organise Folders";
+			name = "Organise Folders by Extension";
 			productName = "Smart Organise Folders";
-			productReference = CDFD43C51B2EA7E5000A61C7 /* Smart Organise Folders.action */;
+			productReference = CDFD43C51B2EA7E5000A61C7 /* Organise Folders by Extension.action */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					CDFD43C41B2EA7E5000A61C7 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -139,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CDFD43C41B2EA7E5000A61C7 /* Smart Organise Folders */,
+				CDFD43C41B2EA7E5000A61C7 /* Organise Folders by Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +224,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -296,6 +297,7 @@
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mannie.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smart Organise Folders/Smart Organise Folders-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -318,6 +320,7 @@
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mannie.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smart Organise Folders/Smart Organise Folders-Bridging-Header.h";
 				WRAPPER_EXTENSION = action;
@@ -336,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDFD43D51B2EA7E5000A61C7 /* Build configuration list for PBXNativeTarget "Smart Organise Folders" */ = {
+		CDFD43D51B2EA7E5000A61C7 /* Build configuration list for PBXNativeTarget "Organise Folders by Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDFD43D61B2EA7E5000A61C7 /* Debug */,

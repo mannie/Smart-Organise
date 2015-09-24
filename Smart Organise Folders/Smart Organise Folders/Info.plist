@@ -49,7 +49,7 @@
 	<key>AMKeywords</key>
 	<array/>
 	<key>AMName</key>
-	<string>Smart Organise Folders</string>
+	<string>Organise Folders by Extension</string>
 	<key>AMProvides</key>
 	<dict>
 		<key>Container</key>

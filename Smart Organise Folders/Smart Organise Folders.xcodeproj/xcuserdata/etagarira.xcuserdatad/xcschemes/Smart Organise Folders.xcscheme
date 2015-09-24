@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,29 +15,32 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CDFD43C41B2EA7E5000A61C7"
-               BuildableName = "Smart Organise Folders.action"
-               BlueprintName = "Smart Organise Folders"
+               BuildableName = "Organise Folders by Extension.action"
+               BlueprintName = "Organise Folders by Extension"
                ReferencedContainer = "container:Smart Organise Folders.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
@@ -48,14 +51,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDFD43C41B2EA7E5000A61C7"
-            BuildableName = "Smart Organise Folders.action"
-            BlueprintName = "Smart Organise Folders"
+            BuildableName = "Organise Folders by Extension.action"
+            BlueprintName = "Organise Folders by Extension"
             ReferencedContainer = "container:Smart Organise Folders.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-action &quot;$(BUILD_DIR)/Debug/Smart Organise Folders.action&quot;"
+            argument = "-action &quot;$(BUILD_DIR)/Debug/Organise Folders by Extension.action&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -63,17 +66,17 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDFD43C41B2EA7E5000A61C7"
-            BuildableName = "Smart Organise Folders.action"
-            BlueprintName = "Smart Organise Folders"
+            BuildableName = "Organise Folders by Extension.action"
+            BlueprintName = "Organise Folders by Extension"
             ReferencedContainer = "container:Smart Organise Folders.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
