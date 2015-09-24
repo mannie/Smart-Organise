@@ -23,7 +23,7 @@ class SmartOrganiseFolders: AMBundleAction {
                 continue
             }
             
-            let fileExts: Array<String>? = (try! fileManager.contentsOfDirectoryAtPath(path))?.map { $0.pathExtension }
+            let fileExts: Array<String>? = (try! fileManager.contentsOfDirectoryAtPath(path)).map { ($0 as NSString).pathExtension }
             let uniqueFileExts = Set(fileExts!).subtract(Set(arrayLiteral: ""))
             for fileExt in uniqueFileExts {
                 let organisedFiles = fileManager.organiseDirectoryAtPath(path, withExtension: fileExt)
