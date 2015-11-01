@@ -328,9 +328,9 @@
 										<key>GID</key>
 										<integer>0</integer>
 										<key>PATH</key>
-										<string>/Volumes/Smart-Organise/Services/Organise Files with Extension.workflow</string>
+										<string>src/Services/Organise Files with Extension.workflow</string>
 										<key>PATH_TYPE</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>PERMISSIONS</key>
 										<integer>493</integer>
 										<key>TYPE</key>
@@ -344,9 +344,9 @@
 										<key>GID</key>
 										<integer>0</integer>
 										<key>PATH</key>
-										<string>/Volumes/Smart-Organise/Services/Organise Folders by Extension.workflow</string>
+										<string>src/Services/Organise Folders by Extension.workflow</string>
 										<key>PATH_TYPE</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>PERMISSIONS</key>
 										<integer>493</integer>
 										<key>TYPE</key>
@@ -360,9 +360,9 @@
 										<key>GID</key>
 										<integer>0</integer>
 										<key>PATH</key>
-										<string>/Volumes/Smart-Organise/Services/Organise Items by Date &gt; Today.workflow</string>
+										<string>src/Services/Organise Items by Date &gt; Today.workflow</string>
 										<key>PATH_TYPE</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>PERMISSIONS</key>
 										<integer>493</integer>
 										<key>TYPE</key>

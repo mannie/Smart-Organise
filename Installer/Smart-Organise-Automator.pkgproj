@@ -56,9 +56,9 @@
 										<key>GID</key>
 										<integer>0</integer>
 										<key>PATH</key>
-										<string>/Volumes/Smart-Organise/Automator/Organise Files with Extension.action</string>
+										<string>src/Automator/Organise Files with Extension.action</string>
 										<key>PATH_TYPE</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>PERMISSIONS</key>
 										<integer>493</integer>
 										<key>TYPE</key>
@@ -72,9 +72,9 @@
 										<key>GID</key>
 										<integer>0</integer>
 										<key>PATH</key>
-										<string>/Volumes/Smart-Organise/Automator/Organise Folders by Extension.action</string>
+										<string>src/Automator/Organise Folders by Extension.action</string>
 										<key>PATH_TYPE</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>PERMISSIONS</key>
 										<integer>493</integer>
 										<key>TYPE</key>
@@ -88,9 +88,9 @@
 										<key>GID</key>
 										<integer>0</integer>
 										<key>PATH</key>
-										<string>/Volumes/Smart-Organise/Automator/Organise Items by Date.action</string>
+										<string>src/Automator/Organise Items by Date.action</string>
 										<key>PATH_TYPE</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>PERMISSIONS</key>
 										<integer>493</integer>
 										<key>TYPE</key>

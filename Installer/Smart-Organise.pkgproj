@@ -360,392 +360,45 @@
 											<array>
 												<dict>
 													<key>CHILDREN</key>
-													<array>
-														<dict>
-															<key>CHILDREN</key>
-															<array>
-																<dict>
-																	<key>CHILDREN</key>
-																	<array>
-																		<dict>
-																			<key>CHILDREN</key>
-																			<array>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/_CodeSignature/CodeDirectory</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/_CodeSignature/CodeRequirements</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/_CodeSignature/CodeResources</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/_CodeSignature/CodeSignature</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																			</array>
-																			<key>EXPANDED</key>
-																			<true/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/_CodeSignature</string>
-																			<key>PATH_TYPE</key>
-																			<integer>0</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>493</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>CHILDREN</key>
-																			<array/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/document.wflow</string>
-																			<key>PATH_TYPE</key>
-																			<integer>0</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>420</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>CHILDREN</key>
-																			<array/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/Info.plist</string>
-																			<key>PATH_TYPE</key>
-																			<integer>0</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>420</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>CHILDREN</key>
-																			<array>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/QuickLook/Thumbnail.png</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																			</array>
-																			<key>EXPANDED</key>
-																			<true/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents/QuickLook</string>
-																			<key>PATH_TYPE</key>
-																			<integer>0</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>493</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																	</array>
-																	<key>EXPANDED</key>
-																	<true/>
-																	<key>GID</key>
-																	<integer>0</integer>
-																	<key>PATH</key>
-																	<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow/Contents</string>
-																	<key>PATH_TYPE</key>
-																	<integer>0</integer>
-																	<key>PERMISSIONS</key>
-																	<integer>493</integer>
-																	<key>TYPE</key>
-																	<integer>3</integer>
-																	<key>UID</key>
-																	<integer>0</integer>
-																</dict>
-															</array>
-															<key>EXPANDED</key>
-															<true/>
-															<key>GID</key>
-															<integer>0</integer>
-															<key>PATH</key>
-															<string>/Volumes/Smart-Organise/Folder Actions/Organise Files with Extension.workflow</string>
-															<key>PATH_TYPE</key>
-															<integer>0</integer>
-															<key>PERMISSIONS</key>
-															<integer>493</integer>
-															<key>TYPE</key>
-															<integer>3</integer>
-															<key>UID</key>
-															<integer>0</integer>
-														</dict>
-														<dict>
-															<key>CHILDREN</key>
-															<array>
-																<dict>
-																	<key>CHILDREN</key>
-																	<array>
-																		<dict>
-																			<key>CHILDREN</key>
-																			<array>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/_CodeSignature/CodeDirectory</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/_CodeSignature/CodeRequirements</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/_CodeSignature/CodeResources</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/_CodeSignature/CodeSignature</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																			</array>
-																			<key>EXPANDED</key>
-																			<true/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/_CodeSignature</string>
-																			<key>PATH_TYPE</key>
-																			<integer>0</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>493</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>CHILDREN</key>
-																			<array/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/document.wflow</string>
-																			<key>PATH_TYPE</key>
-																			<integer>0</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>420</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>CHILDREN</key>
-																			<array/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/Info.plist</string>
-																			<key>PATH_TYPE</key>
-																			<integer>0</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>420</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>CHILDREN</key>
-																			<array>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/QuickLook/Thumbnail.png</string>
-																					<key>PATH_TYPE</key>
-																					<integer>0</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																			</array>
-																			<key>EXPANDED</key>
-																			<true/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents/QuickLook</string>
-																			<key>PATH_TYPE</key>
-																			<integer>0</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>493</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																	</array>
-																	<key>EXPANDED</key>
-																	<true/>
-																	<key>GID</key>
-																	<integer>0</integer>
-																	<key>PATH</key>
-																	<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow/Contents</string>
-																	<key>PATH_TYPE</key>
-																	<integer>0</integer>
-																	<key>PERMISSIONS</key>
-																	<integer>493</integer>
-																	<key>TYPE</key>
-																	<integer>3</integer>
-																	<key>UID</key>
-																	<integer>0</integer>
-																</dict>
-															</array>
-															<key>EXPANDED</key>
-															<true/>
-															<key>GID</key>
-															<integer>0</integer>
-															<key>PATH</key>
-															<string>/Volumes/Smart-Organise/Folder Actions/Organise Items by Date.workflow</string>
-															<key>PATH_TYPE</key>
-															<integer>0</integer>
-															<key>PERMISSIONS</key>
-															<integer>493</integer>
-															<key>TYPE</key>
-															<integer>3</integer>
-															<key>UID</key>
-															<integer>0</integer>
-														</dict>
-													</array>
-													<key>EXPANDED</key>
-													<true/>
+													<array/>
 													<key>GID</key>
 													<integer>0</integer>
 													<key>PATH</key>
-													<string>/Volumes/Smart-Organise/Folder Actions</string>
+													<string>Folder Actions</string>
 													<key>PATH_TYPE</key>
 													<integer>0</integer>
+													<key>PERMISSIONS</key>
+													<integer>511</integer>
+													<key>TYPE</key>
+													<integer>2</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+												<dict>
+													<key>CHILDREN</key>
+													<array/>
+													<key>GID</key>
+													<integer>0</integer>
+													<key>PATH</key>
+													<string>src/Folder Actions/Organise Files with Extension.workflow</string>
+													<key>PATH_TYPE</key>
+													<integer>1</integer>
+													<key>PERMISSIONS</key>
+													<integer>493</integer>
+													<key>TYPE</key>
+													<integer>3</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+												<dict>
+													<key>CHILDREN</key>
+													<array/>
+													<key>GID</key>
+													<integer>0</integer>
+													<key>PATH</key>
+													<string>src/Folder Actions/Organise Items by Date.workflow</string>
+													<key>PATH_TYPE</key>
+													<integer>1</integer>
 													<key>PERMISSIONS</key>
 													<integer>493</integer>
 													<key>TYPE</key>
@@ -925,9 +578,9 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>/Volumes/Smart-Organise/Automator/Organise Files with Extension.action</string>
+											<string>src/Automator/Organise Files with Extension.action</string>
 											<key>PATH_TYPE</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>PERMISSIONS</key>
 											<integer>493</integer>
 											<key>TYPE</key>
@@ -941,9 +594,9 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>/Volumes/Smart-Organise/Automator/Organise Folders by Extension.action</string>
+											<string>src/Automator/Organise Folders by Extension.action</string>
 											<key>PATH_TYPE</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>PERMISSIONS</key>
 											<integer>493</integer>
 											<key>TYPE</key>
@@ -957,9 +610,9 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>/Volumes/Smart-Organise/Automator/Organise Items by Date.action</string>
+											<string>src/Automator/Organise Items by Date.action</string>
 											<key>PATH_TYPE</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>PERMISSIONS</key>
 											<integer>493</integer>
 											<key>TYPE</key>
@@ -1689,9 +1342,9 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>/Volumes/Smart-Organise/Services/Organise Files with Extension.workflow</string>
+											<string>src/Services/Organise Files with Extension.workflow</string>
 											<key>PATH_TYPE</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>PERMISSIONS</key>
 											<integer>493</integer>
 											<key>TYPE</key>
@@ -1705,9 +1358,9 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>/Volumes/Smart-Organise/Services/Organise Folders by Extension.workflow</string>
+											<string>src/Services/Organise Folders by Extension.workflow</string>
 											<key>PATH_TYPE</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>PERMISSIONS</key>
 											<integer>493</integer>
 											<key>TYPE</key>
@@ -1721,9 +1374,9 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>/Volumes/Smart-Organise/Services/Organise Items by Date &gt; Today.workflow</string>
+											<string>src/Services/Organise Items by Date &gt; Today.workflow</string>
 											<key>PATH_TYPE</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>PERMISSIONS</key>
 											<integer>493</integer>
 											<key>TYPE</key>
