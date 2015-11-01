@@ -2078,9 +2078,9 @@
 			<key>BUILD_PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>/Users/etagarira/Projects/Smart-Organise/build</string>
+				<string>build</string>
 				<key>PATH_TYPE</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>EXCLUDED_FILES</key>
 			<array>
