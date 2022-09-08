@@ -29,3 +29,4 @@ Smart-Organise Updater/*
 *.xcuserstate
 *.xcbkptlist
 build
+.DS_Store
