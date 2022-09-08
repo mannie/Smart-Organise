@@ -9,7 +9,7 @@
  
  *Folder Actions*, default to your Downloads folder (`~/Downloads`).
 
-Thank you for choosing Smart-Organize. Enjoy! 😄
+Thank you for using Smart-Organize. Enjoy! 😄
 
 ---
 
