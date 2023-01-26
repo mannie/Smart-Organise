@@ -6,13 +6,18 @@ function organize_file_by_organization() {
     file="$1"
     organization="$2"
 
-    folder="$file:h"
-    destination="$folder/$organization"
-    mkdir -p "$destination"
+    if echo "$file" | grep -q ".download$"
+    then
+        __organized_file="$file"
+    else
+        folder="$file:h"
+        destination="$folder/$organization"
+        mkdir -p "$destination"
 
-    filename="$file:t"
-    __organized_file="$destination/$filename"
-    mv "$file" "$__organized_file"
+        filename="$file:t"
+        __organized_file="$destination/$filename"
+        mv "$file" "$__organized_file"
+    fi
 }
 
 function organize_file_by_extension() {
